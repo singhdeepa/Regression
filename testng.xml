@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+     <!--  <class name="in.licious.test.InvalidLogin"/>
+      <class name="in.licious.test.ValidLoginTest"/>
+      <class name="in.licious.test.TestNGgroups"/>
+      <class name="in.licious.test.BaseTest"/> -->
+      <class name="in.licious.test.Chicken"/>
+      <class name="in.licious.test.MarinadesCOD"/>
+      <class name="in.licious.test.FishandSeafoodCOD"/>
+      <!-- <class name="in.licious.test.CheckoutDeliveryInfo"/> -->
+      <class name="in.licious.test.EggsCOD"/>
+      <class name="in.licious.test.RedMeatsCOD"/>
+      <!-- <class name="in.licious.test.CheckOut"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
