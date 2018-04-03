@@ -101,21 +101,21 @@ public class PicklesCOD extends BaseTest {
 		// Click on Continue button 
 		CheckoutDelivery checkOutDelivery = new CheckoutDelivery(driver);
 		
-		/*// For Express Delivery or 120 Mins Delivery
+		// For Express Delivery or 120 Mins Delivery
 		checkOutDelivery.getContinueBtn().click();
-		Helper.customWait(2);*/
-		
-		// For Scheduled Delivery 
-		checkOutDelivery.getSelectDeliverySlot().click();
 		Helper.customWait(2);
 		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		/*// For Scheduled Delivery 
+		checkOutDelivery.getSelectDeliverySlot().click();
+		Helper.customWait(2);*/
+		
+		/*JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,100)");
 		Helper.customWait(2);
 		checkOutDelivery.getTimeSlot().click();
 		Helper.customWait(1);
 		checkOutDelivery.getContinueBtn().click();
-		Helper.customWait(5);
+		Helper.customWait(5);*/
 		
 		System.out.println("PASSSS");
 		
