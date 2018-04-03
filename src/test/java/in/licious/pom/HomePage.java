@@ -16,11 +16,17 @@ public class HomePage extends BasePage {
 	@FindBy (xpath="//a[.='Marinades' and @class='active']")
 	private WebElement marinades;
 	
-	@FindBy (xpath="//a[@data-index='4']")
+	@FindBy (xpath="//a[@data-id='2']")
 	private WebElement redmeats;
 	
 	@FindBy (xpath="//a[.='Eggs' and @class='active']")
 	private WebElement eggs;
+	
+	@FindBy (xpath="//a[@data-id='7']")
+	private WebElement exotic;
+	
+	@FindBy (xpath="//a[@data-id='20']")
+	private WebElement pickles;
 	
 	
 	public HomePage (WebDriver driver) 
@@ -49,5 +55,12 @@ public class HomePage extends BasePage {
 		return eggs;
 	}
 	
+	public WebElement getexoticCat(){
+		return exotic;
+	}
+	
+	public WebElement getpicklesCat(){
+		return pickles;
+	}
 	
 }

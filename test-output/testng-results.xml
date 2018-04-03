@@ -1,44 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="12" total="17" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="394832" started-at="2018-03-20T12:23:15Z" finished-at="2018-03-20T12:29:50Z">
+  <suite name="Default suite" duration-ms="90513" started-at="2018-03-27T07:16:15Z" finished-at="2018-03-27T07:17:46Z">
     <groups>
-      <group name="Smoke">
-        <method signature="Chicken.testChicken()[pri:1, instance:in.licious.test.Chicken@5abca1e0]" name="testChicken" class="in.licious.test.Chicken"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="394832" started-at="2018-03-20T12:23:15Z" finished-at="2018-03-20T12:29:50Z">
-      <class name="in.licious.test.MarinadesCOD">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.MarinadesCOD@2286778]" name="setUp" is-config="true" duration-ms="19930" started-at="2018-03-20T17:55:23Z" finished-at="2018-03-20T17:55:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.licious.test.MarinadesCOD.testmarinadescod()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testmarinadescod()[pri:2, instance:in.licious.test.MarinadesCOD@2286778]" name="testmarinadescod" duration-ms="63608" started-at="2018-03-20T17:55:43Z" finished-at="2018-03-20T17:56:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmarinadescod -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.MarinadesCOD@2286778]" name="tearDown" is-config="true" duration-ms="2071" started-at="2018-03-20T17:56:47Z" finished-at="2018-03-20T17:56:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testmarinadescod status=SUCCESS method=MarinadesCOD.testmarinadescod()[pri:2, instance:in.licious.test.MarinadesCOD@2286778] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- in.licious.test.MarinadesCOD -->
+    <test name="Default test" duration-ms="90513" started-at="2018-03-27T07:16:15Z" finished-at="2018-03-27T07:17:46Z">
       <class name="in.licious.test.RedMeatsCOD">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.RedMeatsCOD@527740a2]" name="setUp" is-config="true" duration-ms="16988" started-at="2018-03-20T17:56:49Z" finished-at="2018-03-20T17:57:06Z">
+        <test-method status="PASS" signature="initFramework()[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="initFramework" is-config="true" duration-ms="119" started-at="2018-03-27T12:46:15Z" finished-at="2018-03-27T12:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initFramework -->
+        <test-method status="PASS" signature="initGlobalConstants()[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="initGlobalConstants" is-config="true" duration-ms="1" started-at="2018-03-27T12:46:15Z" finished-at="2018-03-27T12:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initGlobalConstants -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="setUp" is-config="true" duration-ms="23778" started-at="2018-03-27T12:46:15Z" finished-at="2018-03-27T12:46:39Z">
           <params>
             <param index="0">
               <value>
@@ -49,255 +26,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testredmeatscod()[pri:3, instance:in.licious.test.RedMeatsCOD@527740a2]" name="testredmeatscod" duration-ms="61717" started-at="2018-03-20T17:57:06Z" finished-at="2018-03-20T17:58:08Z">
+        <test-method status="PASS" signature="testredmeatscod()[pri:3, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="testredmeatscod" duration-ms="64619" started-at="2018-03-27T12:46:39Z" finished-at="2018-03-27T12:47:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testredmeatscod -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.RedMeatsCOD@527740a2]" name="tearDown" is-config="true" duration-ms="2107" started-at="2018-03-20T17:58:08Z" finished-at="2018-03-20T17:58:10Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="tearDown" is-config="true" duration-ms="2099" started-at="2018-03-27T12:47:43Z" finished-at="2018-03-27T12:47:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testredmeatscod status=SUCCESS method=RedMeatsCOD.testredmeatscod()[pri:3, instance:in.licious.test.RedMeatsCOD@527740a2] output={null}]]]>
+                <![CDATA[[TestResult name=testredmeatscod status=SUCCESS method=RedMeatsCOD.testredmeatscod()[pri:3, instance:in.licious.test.RedMeatsCOD@20398b7c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- in.licious.test.RedMeatsCOD -->
-      <class name="in.licious.test.EggsCOD">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.EggsCOD@6d7b4f4c]" name="setUp" is-config="true" duration-ms="14950" started-at="2018-03-20T17:58:29Z" finished-at="2018-03-20T17:58:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.licious.test.EggsCOD.testeggscod()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testeggscod()[pri:5, instance:in.licious.test.EggsCOD@6d7b4f4c]" name="testeggscod" duration-ms="63432" started-at="2018-03-20T17:58:44Z" finished-at="2018-03-20T17:59:47Z">
-          <exception class="org.openqa.selenium.ScriptTimeoutException">
-            <message>
-              <![CDATA[asynchronous script timeout: result was not received in 30 seconds
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'PF0Q7VST-BLR', ip: '192.168.0.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\VISHWA\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: ac75102fba5c1afc52d1ddd93988102a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ScriptTimeoutException: asynchronous script timeout: result was not received in 30 seconds
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'PF0Q7VST-BLR', ip: '192.168.0.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\VISHWA\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: ac75102fba5c1afc52d1ddd93988102a
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeAsyncScript(RemoteWebDriver.java:555)
-	at in.licious.util.Helper.scrollBar(Helper.java:147)
-	at in.licious.test.EggsCOD.testeggscod(EggsCOD.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ScriptTimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testeggscod -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.EggsCOD@6d7b4f4c]" name="tearDown" is-config="true" duration-ms="2318" started-at="2018-03-20T17:59:48Z" finished-at="2018-03-20T17:59:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testeggscod status=FAILURE method=EggsCOD.testeggscod()[pri:5, instance:in.licious.test.EggsCOD@6d7b4f4c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- in.licious.test.EggsCOD -->
-      <class name="in.licious.test.FishandSeafoodCOD">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.FishandSeafoodCOD@4e9ba398]" name="setUp" is-config="true" duration-ms="12374" started-at="2018-03-20T17:58:10Z" finished-at="2018-03-20T17:58:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.licious.test.FishandSeafoodCOD.testfishandseafood()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testfishandseafood()[pri:4, instance:in.licious.test.FishandSeafoodCOD@4e9ba398]" name="testfishandseafood" duration-ms="4445" started-at="2018-03-20T17:58:22Z" finished-at="2018-03-20T17:58:26Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: keys should be a string
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'PF0Q7VST-BLR', ip: '192.168.0.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\VISHWA\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: 3173870e0abf67dacf8e813cd3da83dd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: keys should be a string
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'PF0Q7VST-BLR', ip: '192.168.0.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\VISHWA\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: 3173870e0abf67dacf8e813cd3da83dd
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at in.licious.util.Helper.enterText(Helper.java:72)
-	at in.licious.test.FishandSeafoodCOD.testfishandseafood(FishandSeafoodCOD.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testfishandseafood -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.FishandSeafoodCOD@4e9ba398]" name="tearDown" is-config="true" duration-ms="2309" started-at="2018-03-20T17:58:27Z" finished-at="2018-03-20T17:58:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testfishandseafood status=FAILURE method=FishandSeafoodCOD.testfishandseafood()[pri:4, instance:in.licious.test.FishandSeafoodCOD@4e9ba398] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- in.licious.test.FishandSeafoodCOD -->
-      <class name="in.licious.test.Chicken">
-        <test-method status="PASS" signature="initFramework()[pri:0, instance:in.licious.test.Chicken@5abca1e0]" name="initFramework" is-config="true" duration-ms="93" started-at="2018-03-20T17:53:15Z" finished-at="2018-03-20T17:53:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initFramework -->
-        <test-method status="PASS" signature="initGlobalConstants()[pri:0, instance:in.licious.test.Chicken@5abca1e0]" name="initGlobalConstants" is-config="true" duration-ms="2" started-at="2018-03-20T17:53:15Z" finished-at="2018-03-20T17:53:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initGlobalConstants -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.Chicken@5abca1e0]" name="setUp" is-config="true" duration-ms="14942" started-at="2018-03-20T17:53:15Z" finished-at="2018-03-20T17:53:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void in.licious.test.Chicken.testChicken()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testChicken()[pri:1, instance:in.licious.test.Chicken@5abca1e0]" name="testChicken" duration-ms="110963" started-at="2018-03-20T17:53:30Z" finished-at="2018-03-20T17:55:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChicken -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.Chicken@5abca1e0]" name="tearDown" is-config="true" duration-ms="2104" started-at="2018-03-20T17:55:21Z" finished-at="2018-03-20T17:55:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testChicken status=SUCCESS method=Chicken.testChicken()[pri:1, instance:in.licious.test.Chicken@5abca1e0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeFramework()[pri:0, instance:in.licious.test.Chicken@5abca1e0]" name="closeFramework" is-config="true" duration-ms="219" started-at="2018-03-20T17:59:50Z" finished-at="2018-03-20T17:59:50Z">
+        <test-method status="PASS" signature="closeFramework()[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="closeFramework" is-config="true" duration-ms="792" started-at="2018-03-27T12:47:46Z" finished-at="2018-03-27T12:47:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeFramework -->
-      </class> <!-- in.licious.test.Chicken -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- in.licious.test.RedMeatsCOD -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

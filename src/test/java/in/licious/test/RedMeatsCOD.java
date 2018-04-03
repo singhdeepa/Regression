@@ -32,6 +32,7 @@ public class RedMeatsCOD extends BaseTest {
 		
 		// Enter the Delivery Location
 		helper.enterText(driver, signInpage.getLoactionTxtBox(), "Indiranagar");
+		//helper.enterText(driver, signInpage.getLoactionTxtBox(), location);
 		Helper.customWait(2);
 		signInpage.getLoactionTxtBox().sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
 		Helper.customWait(2);
@@ -47,8 +48,15 @@ public class RedMeatsCOD extends BaseTest {
 		helper.scrollBar(driver, login);
 		
 		// Enter valid UserName and Password
-		signInpage.getUsernameTxtBox().sendKeys("9880335493");
-		signInpage.getPasswordTxtBox().sendKeys("123456");
+//		signInpage.getUsernameTxtBox().sendKeys("9880335493");
+//		signInpage.getPasswordTxtBox().sendKeys("123456");
+		
+		// Entering username from config.properties
+		helper.enterText(driver, signInpage.getUsernameTxtBox(), userName);
+		
+		//signInpage.getPasswordTxtBox().sendKeys("123456");
+		helper.enterText(driver, signInpage.getPasswordTxtBox(), passWord);
+				
 		Helper.customWait(2);
 		
 		// Minimizing the News Letter Subscription
@@ -124,7 +132,7 @@ public class RedMeatsCOD extends BaseTest {
 		System.out.println("maximized");
 		success.getRayzorpayPage().click();
 		Helper.customWait(5);
-		System.out.println("COD order placed with online payment palced successfully");
+		System.out.println("Lamb currycut order palced successfully");
 		
 		
 		// Switch back to original browser (first window)

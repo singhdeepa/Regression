@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class SignupPage {
 	@FindBy(name="name")
 	private WebElement fullName;
+	
 	@FindBy(name="email")
 	private WebElement emailId;
 	@FindBy(name="number")

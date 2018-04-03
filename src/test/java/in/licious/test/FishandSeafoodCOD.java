@@ -137,7 +137,7 @@ public class FishandSeafoodCOD extends BaseTest {
 		System.out.println("maximized");
 		success.getRayzorpayPage().click();
 		Helper.customWait(5);
-		System.out.println("COD order placed with online payment palced successfully");
+		System.out.println("Basa Fillet order palced successfully");
 		
 		
 		// Switch back to original browser (first window)

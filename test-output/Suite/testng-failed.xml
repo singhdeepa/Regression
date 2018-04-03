@@ -13,6 +13,26 @@
           <include name="initGlobalConstants"/>
         </methods>
       </class> <!-- in.licious.test.FishandSeafoodCOD -->
+      <class name="in.licious.test.Chicken">
+        <methods>
+          <include name="closeFramework"/>
+          <include name="tearDown"/>
+          <include name="initFramework"/>
+          <include name="setUp"/>
+          <include name="testChicken"/>
+          <include name="initGlobalConstants"/>
+        </methods>
+      </class> <!-- in.licious.test.Chicken -->
+      <class name="in.licious.test.MarinadesCOD">
+        <methods>
+          <include name="closeFramework"/>
+          <include name="tearDown"/>
+          <include name="testmarinadescod"/>
+          <include name="initFramework"/>
+          <include name="setUp"/>
+          <include name="initGlobalConstants"/>
+        </methods>
+      </class> <!-- in.licious.test.MarinadesCOD -->
       <class name="in.licious.test.EggsCOD">
         <methods>
           <include name="testeggscod"/>
@@ -23,6 +43,16 @@
           <include name="initGlobalConstants"/>
         </methods>
       </class> <!-- in.licious.test.EggsCOD -->
+      <class name="in.licious.test.RedMeatsCOD">
+        <methods>
+          <include name="testredmeatscod"/>
+          <include name="closeFramework"/>
+          <include name="tearDown"/>
+          <include name="initFramework"/>
+          <include name="setUp"/>
+          <include name="initGlobalConstants"/>
+        </methods>
+      </class> <!-- in.licious.test.RedMeatsCOD -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
