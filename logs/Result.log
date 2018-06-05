@@ -3900,3 +3900,39 @@
 2018-06-05 08:27:03,268 - [in.licious.test.Chicken] - INFO - 5 
 2018-06-05 08:27:24,190 - [in.licious.test.Chicken] - INFO - chrome is launched 
 2018-06-05 08:28:39,829 - [in.licious.test.Chicken] - INFO - chrome is closed 
+2018-06-05 17:12:53,843 - [in.licious.test.ColdCutsCOD] - INFO - framework is initialised 
+2018-06-05 17:12:53,858 - [in.licious.test.ColdCutsCOD] - INFO - chrome 
+2018-06-05 17:12:53,859 - [in.licious.test.ColdCutsCOD] - INFO - http://web.licious.in 
+2018-06-05 17:12:53,859 - [in.licious.test.ColdCutsCOD] - INFO - 9880335493 
+2018-06-05 17:12:53,859 - [in.licious.test.ColdCutsCOD] - INFO - 123456 
+2018-06-05 17:12:53,859 - [in.licious.test.ColdCutsCOD] - INFO - 5 
+2018-06-05 17:13:50,613 - [in.licious.test.ColdCutsCOD] - INFO - framework is initialised 
+2018-06-05 17:13:50,624 - [in.licious.test.ColdCutsCOD] - INFO - chrome 
+2018-06-05 17:13:50,624 - [in.licious.test.ColdCutsCOD] - INFO - http://web.licious.in 
+2018-06-05 17:13:50,624 - [in.licious.test.ColdCutsCOD] - INFO - 9880335493 
+2018-06-05 17:13:50,624 - [in.licious.test.ColdCutsCOD] - INFO - 123456 
+2018-06-05 17:13:50,624 - [in.licious.test.ColdCutsCOD] - INFO - 5 
+2018-06-05 17:14:34,996 - [in.licious.test.ColdCutsCOD] - INFO - chrome is launched 
+2018-06-05 17:16:31,915 - [in.licious.test.ColdCutsCOD] - INFO - chrome is closed 
+2018-06-05 17:53:19,528 - [in.licious.test.ColdCutsCOD] - INFO - framework is initialised 
+2018-06-05 17:53:19,532 - [in.licious.test.ColdCutsCOD] - INFO - chrome 
+2018-06-05 17:53:19,533 - [in.licious.test.ColdCutsCOD] - INFO - http://web.licious.in 
+2018-06-05 17:53:19,533 - [in.licious.test.ColdCutsCOD] - INFO - 9880335493 
+2018-06-05 17:53:19,533 - [in.licious.test.ColdCutsCOD] - INFO - 123456 
+2018-06-05 17:53:19,534 - [in.licious.test.ColdCutsCOD] - INFO - 5 
+2018-06-05 17:54:03,383 - [in.licious.test.ColdCutsCOD] - INFO - chrome is launched 
+2018-06-05 17:55:15,266 - [in.licious.test.ColdCutsCOD] - INFO - chrome is closed 
+2018-06-05 18:29:29,988 - [in.licious.test.WeekendTreatsCOD] - INFO - framework is initialised 
+2018-06-05 18:29:29,992 - [in.licious.test.WeekendTreatsCOD] - INFO - chrome 
+2018-06-05 18:29:29,992 - [in.licious.test.WeekendTreatsCOD] - INFO - http://web.licious.in 
+2018-06-05 18:29:29,993 - [in.licious.test.WeekendTreatsCOD] - INFO - 9880335493 
+2018-06-05 18:29:29,993 - [in.licious.test.WeekendTreatsCOD] - INFO - 123456 
+2018-06-05 18:29:29,993 - [in.licious.test.WeekendTreatsCOD] - INFO - 5 
+2018-06-05 18:36:16,190 - [in.licious.test.WeekendTreatsCOD] - INFO - framework is initialised 
+2018-06-05 18:36:16,197 - [in.licious.test.WeekendTreatsCOD] - INFO - chrome 
+2018-06-05 18:36:16,198 - [in.licious.test.WeekendTreatsCOD] - INFO - http://web.licious.in 
+2018-06-05 18:36:16,198 - [in.licious.test.WeekendTreatsCOD] - INFO - 9880335493 
+2018-06-05 18:36:16,199 - [in.licious.test.WeekendTreatsCOD] - INFO - 123456 
+2018-06-05 18:36:16,199 - [in.licious.test.WeekendTreatsCOD] - INFO - 5 
+2018-06-05 18:36:53,934 - [in.licious.test.WeekendTreatsCOD] - INFO - chrome is launched 
+2018-06-05 18:38:07,459 - [in.licious.test.WeekendTreatsCOD] - INFO - chrome is closed 

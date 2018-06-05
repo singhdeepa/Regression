@@ -8,17 +8,17 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import in.licious.pom.ColdCutsPage;
 import in.licious.pom.HomePage;
 import in.licious.pom.NewAddressPage;
 import in.licious.pom.NewCheckoutPage;
 import in.licious.pom.NewDeliverySummaryPage;
 import in.licious.pom.NewLoginFlow;
 import in.licious.pom.NewPaymentPage;
+import in.licious.pom.WeekendTreatsPage;
 import in.licious.util.DataBaseCCC;
 import in.licious.util.Helper;
 
-public class ColdCutsCOD extends BaseTest {
+public class WeekendTreatsCOD extends BaseTest {
 	
 	@Test (priority=4)
 	public void testcoldcuts() throws ClassNotFoundException, SQLException
@@ -72,14 +72,14 @@ public class ColdCutsCOD extends BaseTest {
 	helper.clickOnElement(driver, newlogin.getpasswordloginBtn());
 	Helper.customWait(5);
 	
-	// Click on Cold cuts category
+	// Click on Weekend Treats category
 	HomePage home=new HomePage(driver);
-	home.getcoldcutsCat().click();
+	home.getweekendtreatsCat().click();
 	Helper.customWait(4);
 	
-	// Add Chicken_Sausage to cart
-	ColdCutsPage coldcutsPage =new ColdCutsPage(driver);
-	WebElement addtocart= coldcutsPage.getChickenSausage();
+	// Add White_Pomfret to cart
+	WeekendTreatsPage weekendtreatsPage =new WeekendTreatsPage(driver);
+	WebElement addtocart= weekendtreatsPage.getChickenSausage();
 	helper.scrollBar(driver, addtocart );
 	Helper.customWait(4);
 	System.out.println("pass");

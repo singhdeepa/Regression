@@ -28,7 +28,11 @@ public class HomePage extends BasePage {
 	@FindBy (xpath="//a[@data-id='20']")
 	private WebElement pickles;
 	
+	@FindBy (xpath="//a[@data-id='19']")
+	private WebElement coldcuts;
 	
+	@FindBy (xpath="//a[@data-id='28']")
+	private WebElement weekendtreats;
 	
 	public HomePage (WebDriver driver) 
 	{
@@ -64,4 +68,12 @@ public class HomePage extends BasePage {
 		return pickles;
 	}
 	
+	public WebElement getcoldcutsCat(){
+		return coldcuts;
+	}
+	
+	public WebElement getweekendtreatsCat(){
+		return weekendtreats;
+	}
+
 }
