@@ -7,8 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PaymentPage {
 
-	@FindBy(xpath="//a[.='Net Banking']")
-	private WebElement netBanking;
+	@FindBy(xpath="//li[.='Cash on delivery']")
+	private WebElement cashOnDelivery;
+	
+	
+	@FindBy(xpath="//button[.='Place Order']")
+	private WebElement placeOrder;
+	
 	
 	@FindBy(xpath="//input[@id='citrusNetbankingButton']")
 	private WebElement payNowBtn;
@@ -21,8 +26,9 @@ public class PaymentPage {
 	
 	
 	public WebElement getNetBanking(){
-		return netBanking;
+		return cashOnDelivery;
 	}
+	
 	
 	
 	public WebElement getPayNowBtn(){

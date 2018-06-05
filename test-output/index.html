@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\VISHWA\AppData\Local\Temp\testng-eclipse-1898952519\testng-customsuite.xml</span>
+                    <span>C:\Users\VISHWA\AppData\Local\Temp\testng-eclipse-1605083572\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="in.licious.test.RedMeatsCOD" hash-for-method="testredmeatscod">testredmeatscod</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="in.licious.test.Chicken" hash-for-method="testChicken">testChicken</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">in.licious.test.RedMeatsCOD</span>
+              <span class="class-name">in.licious.test.Chicken</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testredmeatscod">
-                  </a> <!-- testredmeatscod -->
-                  <span class="method-name">testredmeatscod</span>
+                  <a name="testChicken">
+                  </a> <!-- testChicken -->
+                  <span class="method-name">testChicken</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\VISHWA\AppData\Local\Temp\testng-eclipse-1898952519\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\VISHWA\AppData\Local\Temp\testng-eclipse-1605083572\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +144,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;in.licious.test.RedMeatsCOD&quot;/&gt;
+      &lt;class name=&quot;in.licious.test.Chicken&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -168,6 +168,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testChicken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -186,9 +194,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testredmeatscod')
-data.setCell(0, 2, 'in.licious.test.RedMeatsCOD')
-data.setCell(0, 3, 64619);
+data.setCell(0, 1, 'testChicken')
+data.setCell(0, 2, 'in.licious.test.Chicken')
+data.setCell(0, 3, 74484);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -219,30 +227,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">in.licious.test.RedMeatsCOD</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">in.licious.test.Chicken</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initFramework</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">initGlobalConstants</span>
-                <span class="method-start">120 ms</span>
+                <span class="method-start">118 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void in.licious.test.RedMeatsCOD.testredmeatscod())</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-name">setUp(public void in.licious.test.Chicken.testChicken() throws java.lang.ClassNotFoundException,java.sql.S...)</span>
+                <span class="method-start">127 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testredmeatscod</span>
-                <span class="method-start">23909 ms</span>
+                <span class="method-name">testChicken</span>
+                <span class="method-start">22077 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testredmeatscod status=SUCCESS method=RedMeatsCOD.testredmeatscod()[pri:3, instance...)</span>
-                <span class="method-start">88533 ms</span>
+                <span class="method-name">tearDown([TestResult name=testChicken status=SUCCESS method=Chicken.testChicken()[pri:1, instance:in.licious....)</span>
+                <span class="method-start">96566 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeFramework</span>
-                <span class="method-start">90737 ms</span>
+                <span class="method-start">96710 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

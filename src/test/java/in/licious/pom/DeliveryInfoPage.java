@@ -9,8 +9,10 @@ public class DeliveryInfoPage extends BasePage {
 
 	@FindBy (xpath="//h5[.='Mangammanapalya HSR layout']")
 	private WebElement hsr;
+	
 	@FindBy(xpath="//button[.='Continue']")
 	private WebElement continueBtn;
+	
 	public DeliveryInfoPage (WebDriver driver){
 		
 		super(driver);

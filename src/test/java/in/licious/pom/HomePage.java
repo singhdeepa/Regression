@@ -29,6 +29,7 @@ public class HomePage extends BasePage {
 	private WebElement pickles;
 	
 	
+	
 	public HomePage (WebDriver driver) 
 	{
 		super (driver);

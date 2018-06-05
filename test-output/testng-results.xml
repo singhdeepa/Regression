@@ -2,50 +2,53 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90513" started-at="2018-03-27T07:16:15Z" finished-at="2018-03-27T07:17:46Z">
+  <suite name="Default suite" duration-ms="96569" started-at="2018-06-05T02:57:03Z" finished-at="2018-06-05T02:58:39Z">
     <groups>
+      <group name="Smoke">
+        <method signature="Chicken.testChicken()[pri:1, instance:in.licious.test.Chicken@20398b7c]" name="testChicken" class="in.licious.test.Chicken"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Default test" duration-ms="90513" started-at="2018-03-27T07:16:15Z" finished-at="2018-03-27T07:17:46Z">
-      <class name="in.licious.test.RedMeatsCOD">
-        <test-method status="PASS" signature="initFramework()[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="initFramework" is-config="true" duration-ms="119" started-at="2018-03-27T12:46:15Z" finished-at="2018-03-27T12:46:15Z">
+    <test name="Default test" duration-ms="96569" started-at="2018-06-05T02:57:03Z" finished-at="2018-06-05T02:58:39Z">
+      <class name="in.licious.test.Chicken">
+        <test-method status="PASS" signature="initFramework()[pri:0, instance:in.licious.test.Chicken@20398b7c]" name="initFramework" is-config="true" duration-ms="117" started-at="2018-06-05T08:27:03Z" finished-at="2018-06-05T08:27:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initFramework -->
-        <test-method status="PASS" signature="initGlobalConstants()[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="initGlobalConstants" is-config="true" duration-ms="1" started-at="2018-03-27T12:46:15Z" finished-at="2018-03-27T12:46:15Z">
+        <test-method status="PASS" signature="initGlobalConstants()[pri:0, instance:in.licious.test.Chicken@20398b7c]" name="initGlobalConstants" is-config="true" duration-ms="1" started-at="2018-06-05T08:27:03Z" finished-at="2018-06-05T08:27:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initGlobalConstants -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="setUp" is-config="true" duration-ms="23778" started-at="2018-03-27T12:46:15Z" finished-at="2018-03-27T12:46:39Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.Chicken@20398b7c]" name="setUp" is-config="true" duration-ms="21950" started-at="2018-06-05T08:27:03Z" finished-at="2018-06-05T08:27:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void in.licious.test.RedMeatsCOD.testredmeatscod()]]>
+                <![CDATA[public void in.licious.test.Chicken.testChicken() throws java.lang.ClassNotFoundException,java.sql.SQLException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testredmeatscod()[pri:3, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="testredmeatscod" duration-ms="64619" started-at="2018-03-27T12:46:39Z" finished-at="2018-03-27T12:47:43Z">
+        <test-method status="PASS" signature="testChicken()[pri:1, instance:in.licious.test.Chicken@20398b7c]" name="testChicken" duration-ms="74484" started-at="2018-06-05T08:27:25Z" finished-at="2018-06-05T08:28:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testredmeatscod -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="tearDown" is-config="true" duration-ms="2099" started-at="2018-03-27T12:47:43Z" finished-at="2018-03-27T12:47:46Z">
+        </test-method> <!-- testChicken -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.Chicken@20398b7c]" name="tearDown" is-config="true" duration-ms="115" started-at="2018-06-05T08:28:39Z" finished-at="2018-06-05T08:28:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testredmeatscod status=SUCCESS method=RedMeatsCOD.testredmeatscod()[pri:3, instance:in.licious.test.RedMeatsCOD@20398b7c] output={null}]]]>
+                <![CDATA[[TestResult name=testChicken status=SUCCESS method=Chicken.testChicken()[pri:1, instance:in.licious.test.Chicken@20398b7c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeFramework()[pri:0, instance:in.licious.test.RedMeatsCOD@20398b7c]" name="closeFramework" is-config="true" duration-ms="792" started-at="2018-03-27T12:47:46Z" finished-at="2018-03-27T12:47:46Z">
+        <test-method status="PASS" signature="closeFramework()[pri:0, instance:in.licious.test.Chicken@20398b7c]" name="closeFramework" is-config="true" duration-ms="235" started-at="2018-06-05T08:28:39Z" finished-at="2018-06-05T08:28:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeFramework -->
-      </class> <!-- in.licious.test.RedMeatsCOD -->
+      </class> <!-- in.licious.test.Chicken -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

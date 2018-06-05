@@ -84,7 +84,7 @@ public class Helper {
 			}
 		} catch (AWTException e) {
 			e.printStackTrace();
-		}
+		}	
 		 
 	 }
 	 public  WebDriver switchToFrame(WebDriver driver,WebElement element,long timeOutInSecond){

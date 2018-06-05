@@ -1,5 +1,7 @@
 package in.licious.test;
 
+import java.sql.SQLException;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -11,19 +13,76 @@ import in.licious.pom.CheckoutDelivery;
 import in.licious.pom.CheckoutPage;
 import in.licious.pom.ChickenPage;
 import in.licious.pom.DeliverySummaryPage;
+import in.licious.pom.FishandSeafoodPage;
 import in.licious.pom.HomePage;
+import in.licious.pom.NewAddressPage;
+import in.licious.pom.NewCheckoutPage;
+import in.licious.pom.NewDeliverySummaryPage;
+import in.licious.pom.NewLoginFlow;
+import in.licious.pom.NewPaymentPage;
 import in.licious.pom.PaymentPage;
 import in.licious.pom.RayzorpayPage;
 import in.licious.pom.SignInPage;
 import in.licious.pom.SignupPage;
+import in.licious.util.DataBaseCCC;
 import in.licious.util.Helper;
 import in.licious.util.ReadData;
 
 public class Chicken extends BaseTest {
 
 	@Test(groups = "Smoke", priority = 1)
-	public void testChicken() {
-		SignInPage signInpage = new SignInPage(driver);
+	public void testChicken() throws ClassNotFoundException, SQLException 
+	{
+		
+		// Sign In with New Login Flow
+		NewLoginFlow newlogin = new NewLoginFlow(driver);
+		Helper helper = new Helper();
+		helper.clickOnElement(driver, newlogin.getSelectLocation());
+		Helper.customWait(2);
+		helper.clickOnElement(driver, newlogin.getbengaluruDeliveryLocation());
+		Helper.customWait(2);
+		helper.enterText(driver, newlogin.getLoactionTxtBox(), location);
+		Helper.customWait(2);
+		newlogin.getLoactionTxtBox().sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
+		Helper.customWait(2);
+		etest.log(LogStatus.PASS,"Location is selected");
+		
+		// Click on Login in HomePage
+		newlogin.getLogin().click();
+		Helper.customWait(2);
+		
+		// Enter valid UserName and Password
+		helper.enterText(driver, newlogin.getMobileNumber(), userName);
+		Helper.customWait(2);
+		
+		// Click on Proceed button
+		helper.clickOnElement(driver, newlogin.getProceedBtn());
+		Helper.customWait(2);
+				
+		// Click on Password login 
+		helper.clickOnElement(driver, newlogin.getpasswordLogin());
+		Helper.customWait(2);
+				
+		// Enter the password
+		helper.enterText(driver, newlogin.getenterpassword(), passWord);
+		Helper.customWait(2);
+				
+		
+		// Click on OTP Login
+		// Reading OTP  from DB
+		DataBaseCCC db1=new DataBaseCCC(driver);
+		System.out.println("Pass1");
+		String s1=db1.otp1;
+		System.out.println("otp1");
+		System.out.println("pass2");
+		System.out.println(s1);
+		System.out.println("pass3");
+		
+		// Click on Login Button
+		helper.clickOnElement(driver, newlogin.getpasswordloginBtn());
+		Helper.customWait(5);
+		
+		/*SignInPage signInpage = new SignInPage(driver);
 		Helper helper = new Helper();
 		helper.clickOnElement(driver, signInpage.getSelectLocation());
 
@@ -81,8 +140,50 @@ public class Chicken extends BaseTest {
 		signInpage.getLoginBtn().click();
 		System.out.println("Pass8");
 		Helper.customWait(4);
+		*/
+		
+		// Click on Chicken category
+		HomePage home=new HomePage(driver);
+		home.getChickenCat().click();
+		Helper.customWait(4);
+		
+		// Add Chicken_Thigh to cart
+		ChickenPage chickenPage = new ChickenPage(driver);
+		WebElement addtocart = chickenPage.getAddToCartBtn1();
+		helper.scrollBar(driver, addtocart );
+		Helper.customWait(4);
+		System.out.println("pass");
 
-		HomePage home = new HomePage(driver);
+		// New Checkout flow
+		
+		// New Cart Page
+		NewCheckoutPage cartloaded = new NewCheckoutPage(driver);
+		cartloaded.getcartBtn().click();
+		Helper.customWait(2);
+		cartloaded.getCheckoutBtn().click();
+		Helper.customWait(2);
+		
+		// New Address Summary Page
+		NewAddressPage newAddressPage = new NewAddressPage(driver);
+		newAddressPage.getInd().click();
+		newAddressPage.getContinueBtn().click();
+		Helper.customWait(2);
+		
+		// New Delivery Summary page
+		NewDeliverySummaryPage  newDeliverySummary = new NewDeliverySummaryPage(driver);
+		newDeliverySummary.getProceedToPaymentBtn().click();
+		Helper.customWait(2);
+		
+		// New Payment Page
+		NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
+		newPaymentPage.getCashOnDelivery().click();
+		Helper.customWait(2);
+		newPaymentPage.getPlaceOrder().click();
+		Helper.customWait(10);
+				
+		System.out.println("Cash On Delivery Order Placed Sucessfully");
+		
+		/*HomePage home = new HomePage(driver);
 		home.getChickenCat().click();
 		System.out.println("Pass9");
 		Helper.customWait(4);
@@ -212,6 +313,6 @@ public class Chicken extends BaseTest {
 		// cp.getCart().click();
 		//
 		//
-
+*/
 	}
 }

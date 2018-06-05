@@ -7,13 +7,13 @@
       <class name="in.licious.test.ValidLoginTest"/>
       <class name="in.licious.test.TestNGgroups"/>
       <class name="in.licious.test.BaseTest"/> -->
-      <class name="in.licious.test.Chicken"/>
+     <!--   <class name="in.licious.test.Chicken"/>
       <class name="in.licious.test.MarinadesCOD"/>
-      <class name="in.licious.test.FishandSeafoodCOD"/>
+      <class name="in.licious.test.FishandSeafoodCOD"/>-->
       <!-- <class name="in.licious.test.CheckoutDeliveryInfo"/> -->
       <class name="in.licious.test.EggsCOD"/>
-      <class name="in.licious.test.RedMeatsCOD"/>
-      <!-- <class name="in.licious.test.CheckOut"/> -->
+        <!--<class name="in.licious.test.RedMeatsCOD"/>
+     <class name="in.licious.test.CheckOut"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

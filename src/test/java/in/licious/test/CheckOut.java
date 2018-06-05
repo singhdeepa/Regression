@@ -13,7 +13,7 @@ public class CheckOut extends Chicken {
 	@Test
 	public void clickCartBtn() {
 	
-		chicken.testChicken();
+		//chicken.testChicken();
 		checkoutPage.getcartBtn().click();
 		checkoutPage.getCheckoutBtn().click();
 		
