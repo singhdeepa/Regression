@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NewPaymentPage {
 
-	@FindBy(xpath="//li[.='Cash on delivery']")
+	@FindBy(xpath="//li[@data-payname='cod']")
 	private WebElement cashOnDelivery;
 	
 	
