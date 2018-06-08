@@ -27,7 +27,7 @@ import in.licious.util.Helper;
 
 public class MarinadesCOD extends BaseTest {
 	
-	@Test 
+	@Test (priority=3)
 	public void testmarinadescod() throws ClassNotFoundException, SQLException
 	{
 	

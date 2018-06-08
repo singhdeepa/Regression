@@ -20,7 +20,7 @@ import in.licious.util.Helper;
 
 public class EggsCOD extends BaseTest {
 
-	@Test 
+	@Test (priority=9)
 	public void testeggscod() throws ClassNotFoundException, SQLException
 	{
 
@@ -128,7 +128,7 @@ public class EggsCOD extends BaseTest {
 		EggsPage eggsPage =new EggsPage(driver);
 		WebElement addtocart= eggsPage.getCountryEggs();
 		helper.scrollBar(driver, addtocart );
-		Helper.customWait(8);
+		Helper.customWait(10);
 		System.out.println("pass");
 
 		// Add Country_Eggs to cart

@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="163164" started-at="2018-06-08T04:38:50Z" finished-at="2018-06-08T04:41:33Z">
+  <suite name="Default suite" duration-ms="92175" started-at="2018-06-08T14:42:02Z" finished-at="2018-06-08T14:43:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="163164" started-at="2018-06-08T04:38:50Z" finished-at="2018-06-08T04:41:33Z">
-      <class name="in.licious.test.ExoticCOD">
-        <test-method status="PASS" signature="initFramework()[pri:0, instance:in.licious.test.ExoticCOD@20398b7c]" name="initFramework" is-config="true" duration-ms="690" started-at="2018-06-08T10:08:50Z" finished-at="2018-06-08T10:08:50Z">
+    <test name="Default test" duration-ms="92175" started-at="2018-06-08T14:42:02Z" finished-at="2018-06-08T14:43:34Z">
+      <class name="in.licious.test.EggsCOD">
+        <test-method status="PASS" signature="initFramework()[pri:0, instance:in.licious.test.EggsCOD@20398b7c]" name="initFramework" is-config="true" duration-ms="127" started-at="2018-06-08T20:12:02Z" finished-at="2018-06-08T20:12:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initFramework -->
-        <test-method status="PASS" signature="initGlobalConstants()[pri:0, instance:in.licious.test.ExoticCOD@20398b7c]" name="initGlobalConstants" is-config="true" duration-ms="4" started-at="2018-06-08T10:08:50Z" finished-at="2018-06-08T10:08:50Z">
+        <test-method status="PASS" signature="initGlobalConstants()[pri:0, instance:in.licious.test.EggsCOD@20398b7c]" name="initGlobalConstants" is-config="true" duration-ms="2" started-at="2018-06-08T20:12:02Z" finished-at="2018-06-08T20:12:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initGlobalConstants -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.ExoticCOD@20398b7c]" name="setUp" is-config="true" duration-ms="75269" started-at="2018-06-08T10:08:50Z" finished-at="2018-06-08T10:10:06Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.EggsCOD@20398b7c]" name="setUp" is-config="true" duration-ms="17331" started-at="2018-06-08T20:12:02Z" finished-at="2018-06-08T20:12:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void in.licious.test.ExoticCOD.testexotic() throws java.lang.ClassNotFoundException,java.sql.SQLException]]>
+                <![CDATA[public void in.licious.test.EggsCOD.testeggscod() throws java.lang.ClassNotFoundException,java.sql.SQLException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testexotic()[pri:0, instance:in.licious.test.ExoticCOD@20398b7c]" name="testexotic" duration-ms="86135" started-at="2018-06-08T10:10:06Z" finished-at="2018-06-08T10:11:32Z">
+        <test-method status="PASS" signature="testeggscod()[pri:9, instance:in.licious.test.EggsCOD@20398b7c]" name="testeggscod" duration-ms="74688" started-at="2018-06-08T20:12:19Z" finished-at="2018-06-08T20:13:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testexotic -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.ExoticCOD@20398b7c]" name="tearDown" is-config="true" duration-ms="1543" started-at="2018-06-08T10:11:32Z" finished-at="2018-06-08T10:11:33Z">
+        </test-method> <!-- testeggscod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.EggsCOD@20398b7c]" name="tearDown" is-config="true" duration-ms="135" started-at="2018-06-08T20:13:34Z" finished-at="2018-06-08T20:13:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testexotic status=SUCCESS method=ExoticCOD.testexotic()[pri:0, instance:in.licious.test.ExoticCOD@20398b7c] output={null}]]]>
+                <![CDATA[[TestResult name=testeggscod status=SUCCESS method=EggsCOD.testeggscod()[pri:9, instance:in.licious.test.EggsCOD@20398b7c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeFramework()[pri:0, instance:in.licious.test.ExoticCOD@20398b7c]" name="closeFramework" is-config="true" duration-ms="1254" started-at="2018-06-08T10:11:34Z" finished-at="2018-06-08T10:11:35Z">
+        <test-method status="PASS" signature="closeFramework()[pri:0, instance:in.licious.test.EggsCOD@20398b7c]" name="closeFramework" is-config="true" duration-ms="593" started-at="2018-06-08T20:13:34Z" finished-at="2018-06-08T20:13:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeFramework -->
-      </class> <!-- in.licious.test.ExoticCOD -->
+      </class> <!-- in.licious.test.EggsCOD -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

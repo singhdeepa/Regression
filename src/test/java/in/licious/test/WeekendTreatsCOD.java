@@ -20,7 +20,7 @@ import in.licious.util.Helper;
 
 public class WeekendTreatsCOD extends BaseTest {
 	
-	@Test 
+	@Test (priority=6)
 	public void testcoldcuts() throws ClassNotFoundException, SQLException
 	{
 	

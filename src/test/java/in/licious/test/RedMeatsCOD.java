@@ -27,7 +27,7 @@ import in.licious.util.Helper;
 
 public class RedMeatsCOD extends BaseTest {
 	
-	@Test 
+	@Test (priority=4)
 	public void testredmeatscod() throws ClassNotFoundException, SQLException
 	{
 		
