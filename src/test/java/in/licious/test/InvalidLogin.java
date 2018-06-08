@@ -13,7 +13,7 @@ import in.licious.pom.SignInPage;
 import in.licious.util.Helper;
 public class InvalidLogin extends BaseTest{
 
-	@Test (priority=1)
+	@Test
 	public void testInvalidLogin() throws InterruptedException{
 		SignInPage signInpage=new SignInPage(driver);
 		signInpage.getSelectLocation().click();

@@ -31,9 +31,9 @@ public abstract class BaseTest implements  AutomationConstant {
 	public static Properties properties;
 	private static String browserName;
 	private static String url;
-	public  String userName;
-	public  String passWord;
-	public String location;;
+	public static String userName;
+	public  static  String passWord;
+	public static String location;;
 	public static int implicitWait;
 	public static ExtentReports ereport;
 	public static ExtentTest etest;

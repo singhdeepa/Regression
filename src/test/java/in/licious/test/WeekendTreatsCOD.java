@@ -30,7 +30,7 @@ public class WeekendTreatsCOD extends BaseTest {
 	helper.clickOnElement(driver, newlogin.getSelectLocation());
 	Helper.customWait(2);
 	helper.clickOnElement(driver, newlogin.getbengaluruDeliveryLocation());
-	Helper.customWait(2);
+	Helper.customWait(10);
 	helper.enterText(driver, newlogin.getLoactionTxtBox(), location);
 	Helper.customWait(2);
 	newlogin.getLoactionTxtBox().sendKeys(Keys.ARROW_DOWN,Keys.ENTER);

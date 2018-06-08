@@ -3,129 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="in.licious.test.PicklesCOD">
-        <methods>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="initFramework"/>
-          <include name="testpickles"/>
-          <include name="setUp"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.PicklesCOD -->
-      <class name="in.licious.test.WeekendTreatsCOD">
-        <methods>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="testcoldcuts"/>
-          <include name="initFramework"/>
-          <include name="setUp"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.WeekendTreatsCOD -->
-      <class name="in.licious.test.Chicken">
-        <methods>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="initFramework"/>
-          <include name="setUp"/>
-          <include name="testChicken"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.Chicken -->
-      <class name="in.licious.test.ExoticCOD">
-        <methods>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="initFramework"/>
-          <include name="setUp"/>
-          <include name="testexotic"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.ExoticCOD -->
-      <class name="in.licious.test.CheckOut">
-        <methods>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="initFramework"/>
-          <include name="clickCartBtn"/>
-          <include name="setUp"/>
-          <include name="testChicken"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.CheckOut -->
-      <class name="in.licious.test.CheckoutDeliveryInfo">
-        <methods>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="checkOutDelivery"/>
-          <include name="initFramework"/>
-          <include name="clickCartBtn"/>
-          <include name="setUp"/>
-          <include name="testChicken"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.CheckoutDeliveryInfo -->
-      <class name="in.licious.test.EggsCOD">
-        <methods>
-          <include name="testeggscod"/>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="initFramework"/>
-          <include name="setUp"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.EggsCOD -->
-      <class name="in.licious.test.MarinadesCOD">
-        <methods>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="testmarinadescod"/>
-          <include name="initFramework"/>
-          <include name="setUp"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.MarinadesCOD -->
-      <class name="in.licious.test.InvalidLogin">
-        <methods>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="initFramework"/>
-          <include name="setUp"/>
-          <include name="testInvalidLogin"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.InvalidLogin -->
-      <class name="in.licious.test.RedMeatsCOD">
-        <methods>
-          <include name="testredmeatscod"/>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="initFramework"/>
-          <include name="setUp"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.RedMeatsCOD -->
-      <class name="in.licious.test.ColdCutsCOD">
-        <methods>
-          <include name="testcoldcuts"/>
-          <include name="tearDown"/>
-          <include name="closeFramework"/>
-          <include name="initFramework"/>
-          <include name="setUp"/>
-          <include name="initGlobalConstants"/>
-        </methods>
-      </class> <!-- in.licious.test.ColdCutsCOD -->
       <class name="in.licious.test.FishandSeafoodCOD">
         <methods>
           <include name="testfishandseafood"/>
-          <include name="tearDown"/>
           <include name="closeFramework"/>
+          <include name="tearDown"/>
           <include name="initFramework"/>
           <include name="setUp"/>
           <include name="initGlobalConstants"/>
         </methods>
       </class> <!-- in.licious.test.FishandSeafoodCOD -->
+      <class name="in.licious.test.RedMeatsCOD">
+        <methods>
+          <include name="testredmeatscod"/>
+          <include name="closeFramework"/>
+          <include name="tearDown"/>
+          <include name="initFramework"/>
+          <include name="setUp"/>
+          <include name="initGlobalConstants"/>
+        </methods>
+      </class> <!-- in.licious.test.RedMeatsCOD -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
