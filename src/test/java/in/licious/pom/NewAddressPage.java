@@ -12,7 +12,7 @@ public class NewAddressPage extends BasePage {
 	
 	
 	// For Indiranagar Address
-	@FindBy (xpath="//li[@data-addrstr='Indiranagar Office <br>Licious Bangalore 9880335493']")
+	@FindBy (xpath="//li[@data-addrstr='Thimma Reddy Layout, 27th Cross Rd, Kondappa Layout, Vignan Nagar, Doddanekundi, Kaggadasapura Yellammadevi Nilaya <br>Jana Jeeva Enclave Bangalore 9880335493']")
 	private WebElement ind;
 	
 	

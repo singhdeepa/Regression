@@ -15,9 +15,14 @@ public class NewPaymentPage {
 	private WebElement placeOrder;
 	
 	
-	@FindBy(xpath="//input[@id='citrusNetbankingButton']")
-	private WebElement payNowBtn;
+	@FindBy(xpath="//li[@data-payname='netbanking']")
+	private WebElement netBanking;
 	
+	@FindBy(xpath="//li[@data-bc='HDFC']")
+	private WebElement hdfc;
+	
+	@FindBy(xpath="//button[@data-mode='netbanking']")
+	private WebElement pay;
 	
 	public NewPaymentPage(WebDriver driver){
 		PageFactory.initElements(driver, this);
@@ -33,7 +38,15 @@ public class NewPaymentPage {
 		return placeOrder;
 	}
 	
-	public WebElement getPayNowBtn(){
-		return payNowBtn;
+	public WebElement getNetBanking(){
+		return netBanking;
+	}
+	
+	public WebElement getHDFC(){
+		return hdfc;
+	}
+	
+	public WebElement getPayButton(){
+		return pay;
 	}
 }
