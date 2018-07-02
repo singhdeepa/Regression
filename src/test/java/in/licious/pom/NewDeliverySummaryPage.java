@@ -10,6 +10,9 @@ public class NewDeliverySummaryPage extends BasePage{
 	@FindBy(xpath="//button[.=' Proceed to Payment']")
 	private WebElement proceedToPaymentBtn;
 	
+	@FindBy(xpath="//div[@data-time='Today 120 min']")
+	private WebElement today120min;
+	
 	@FindBy(xpath="//div[contains(@class,'slots-selector')]")
 	private WebElement selectDeliverySlot;
 	
@@ -26,6 +29,10 @@ public class NewDeliverySummaryPage extends BasePage{
 	
 	public WebElement getProceedToPaymentBtn(){
 		return proceedToPaymentBtn;
+	}
+	
+	public WebElement gettoday120min(){
+		return today120min;
 	}
 	
 	public WebElement getSelectDeliverySlot(){

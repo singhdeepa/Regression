@@ -27,7 +27,7 @@ import in.licious.util.SetUpDrivers;
 @Listeners(CustomListeners.class)
 public abstract class BaseTest implements  AutomationConstant {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static Properties properties;
 	private static String browserName;
 	private static String url;

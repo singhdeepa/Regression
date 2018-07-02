@@ -2,6 +2,7 @@ package in.licious.test;
 
 import java.sql.SQLException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -16,6 +17,7 @@ import in.licious.pom.NewDeliverySummaryPage;
 import in.licious.pom.NewLoginFlow;
 import in.licious.pom.NewPaymentPage;
 import in.licious.util.DataBaseCCC;
+import in.licious.util.DeliverySlot;
 import in.licious.util.Helper;
 
 public class FishandSeafoodCOD extends BaseTest {
@@ -185,9 +187,99 @@ public class FishandSeafoodCOD extends BaseTest {
 		Helper.customWait(2);
 		
 		// New Delivery Summary page
+		//NewDeliverySummaryPage  newDeliverySummary = new NewDeliverySummaryPage(driver);
+		
+		// Click on OTP Login
+				
+		
+		// Delivery Slot Selection Express or Scheduled
 		NewDeliverySummaryPage  newDeliverySummary = new NewDeliverySummaryPage(driver);
-		newDeliverySummary.getProceedToPaymentBtn().click();
+		WebElement TxtBoxContent = driver.findElement(By.xpath("//div[@class='slots-selector']"));
 		Helper.customWait(2);
+		System.out.println("Printing " + TxtBoxContent.getText());
+		Helper.customWait(2);
+		
+		if (TxtBoxContent.getText().equalsIgnoreCase("Today 120 MIN"))
+		{
+			System.out.println("Order Placing as Express Delivery");
+			newDeliverySummary.getProceedToPaymentBtn().click();	
+			Helper.customWait(2);
+		}
+		
+		else 
+		{
+			System.out.println("Order Placing as Scheduled Delivery");
+			
+			// Select the Delivery Slot for scheduled delivery
+			newDeliverySummary.getSelectDeliverySlot().click();
+			Helper.customWait(2);
+			newDeliverySummary.getTimeSlot().click();
+			Helper.customWait(2);
+			newDeliverySummary.getProceedToPaymentBtn().click();
+			Helper.customWait(2);
+		}
+		
+//		DeliverySlot slotselection = new DeliverySlot(driver);
+//		
+//		System.out.println("PASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
+//		String s2=slotselection.ss1;
+//		Helper.customWait(2);
+		/*//newly added lines
+		//String a=newDeliverySummary.gettoday120min().getText(); 
+		
+		
+		//WebElement wb1=newDeliverySummary.gettoday120min();
+		WebElement TxtBoxContent = driver.findElement(By.xpath("//div[@class='slots-selector']"));
+		Helper.customWait(2);
+		System.out.println("PASS2000");
+		System.out.println("Printing " + TxtBoxContent.getText());
+		Helper.customWait(2);
+		
+		
+			
+		String a = TxtBoxContent.getText();
+		
+		Helper.customWait(2);
+		//String a = TxtBoxContent.getAttribute("value");
+		System.out.println("PASS2000");
+		System.out.println(a);
+		System.out.println("PASS1000");
+		Helper.customWait(2);
+		
+		String b="Today 120 min";
+		
+		System.out.println(b);
+		Helper.customWait(2);
+		
+		//if("a".equals("b")) 
+		//if (a==b)
+		if (TxtBoxContent.getText().equalsIgnoreCase("Today 120 MIN"))
+		{
+			
+			System.out.println("Order Placing as Express Delivery");
+			
+			newDeliverySummary.getProceedToPaymentBtn().click();
+			
+			Helper.customWait(2);
+		}
+		
+		else 
+		{
+			
+			System.out.println("Order Placing as Scheduled Delivery");
+			
+			// Select the Delivery Slot for scheduled delivery
+			newDeliverySummary.getSelectDeliverySlot().click();
+			Helper.customWait(2);
+			newDeliverySummary.getTimeSlot().click();
+			Helper.customWait(2);
+			newDeliverySummary.getProceedToPaymentBtn().click();
+			Helper.customWait(2);
+		}
+		*/
+		 
+//		newDeliverySummary.getProceedToPaymentBtn().click();
+//		Helper.customWait(2);
 		
 		// New Payment Page
 		NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
