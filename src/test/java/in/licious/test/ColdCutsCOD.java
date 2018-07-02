@@ -20,7 +20,7 @@ import in.licious.util.Helper;
 
 public class ColdCutsCOD extends BaseTest {
 	
-	@Test (priority=7)
+	@Test (priority=4)
 	public void testcoldcuts() throws ClassNotFoundException, SQLException
 	{
 	

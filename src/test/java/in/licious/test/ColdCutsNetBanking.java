@@ -24,7 +24,7 @@ import in.licious.util.Helper;
 
 public class ColdCutsNetBanking extends BaseTest {
 	
-	@Test (priority=1)
+	@Test (priority=5)
 	public void testfishandseafood() throws ClassNotFoundException, SQLException
 	{
 		
