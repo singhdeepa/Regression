@@ -219,6 +219,7 @@ public class MarinadesCOD extends BaseTest {
 		success.getRayzorpayPage().click();
 		Helper.customWait(5);
 		System.out.println("Peri Peri chicken order palced successfully ");
+		System.out.println("Peri Peri chicken order palced successfully ");
 		
 		
 		// Switch back to original browser (first window)
