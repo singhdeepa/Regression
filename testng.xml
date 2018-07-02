@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test" thread-count="9">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="in.licious.test.FishandSeafoodCOD"/>
-      <class name="in.licious.test.Chicken"/>
-      <class name="in.licious.test.EggsCOD"/>
-      <class name="in.licious.test.PicklesCOD"/>
-      <class name="in.licious.test.ColdCutsCOD"/>
-      <class name="in.licious.test.MarinadesCOD"/>
-      <class name="in.licious.test.RedMeatsCOD"/>
+      <class name="in.licious.test.ChickenNetBanking"/>
       <class name="in.licious.test.ExoticCOD"/>
+      <class name="in.licious.test.ExoticNetBanking"/>
+      <class name="in.licious.test.RedMeatsPOD"/>
+      <class name="in.licious.test.MarinadesNetBanking"/>
       <class name="in.licious.test.WeekendTreatsCOD"/>
-      <!-- <class name="in.licious.test.CheckOut"/>
-      <class name="in.licious.test.BaseTest"/>
-      <class name="in.licious.test.InvalidLogin"/>
-      <class name="in.licious.test.ValidLoginTest"/>
-      <class name="in.licious.test.TestNGgroups"/>
-      <class name="in.licious.test.CheckoutDeliveryInfo"/> -->
+      <class name="in.licious.test.MarinadesPOD"/>
+      <!-- <class name="in.licious.test.InvalidLogin"/> -->
+      <class name="in.licious.test.WeekendTreatsNetBanking"/>
+      <class name="in.licious.test.FishandSeafoodNetBanking"/>
+      <!-- <class name="in.licious.test.TestNGgroups"/> -->
+      <!-- <class name="in.licious.test.ValidLoginTest"/> -->
+      <class name="in.licious.test.PicklesCOD"/>
+      <class name="in.licious.test.WeekendTreatsPOD"/>
+      <class name="in.licious.test.ColdCutsCOD"/>
+      <class name="in.licious.test.EggsPOD"/>
+      <class name="in.licious.test.FishandSeafoodCOD"/>
+      <class name="in.licious.test.PicklesPOD"/>
+      <class name="in.licious.test.CheckOut"/>
+      <class name="in.licious.test.ChickenPOD"/>
+      <!-- <class name="in.licious.test.BaseTest"/> -->
+      <class name="in.licious.test.FishandSeafoodPOD"/>
+      <class name="in.licious.test.ColdCutsNetBanking"/>
+      <class name="in.licious.test.CheckoutDeliveryInfo"/>
+      <class name="in.licious.test.ColdCutsPOD"/>
+      <class name="in.licious.test.RedMeatsNetBanking"/>
+      <class name="in.licious.test.EggsCOD"/>
+      <class name="in.licious.test.Chicken"/>
+      <class name="in.licious.test.MarinadesCOD"/>
+      <class name="in.licious.test.EggsNetBanking"/>
+      <class name="in.licious.test.ExoticPOD"/>
+      <class name="in.licious.test.PicklesNetBanking"/>
+      <class name="in.licious.test.RedMeatsCOD"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

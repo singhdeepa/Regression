@@ -28,7 +28,7 @@ import in.licious.util.DataBaseCCC;
 import in.licious.util.Helper;
 import in.licious.util.ReadData;
 
-public class ChickenNetBanking extends BaseTest {
+public class ChickenPOD extends BaseTest {
 
 	@Test (priority=2)
 	public void testChicken() throws ClassNotFoundException, SQLException 
@@ -118,32 +118,12 @@ public class ChickenNetBanking extends BaseTest {
 		
 		// New Payment Page
 		NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
-		
-		// Paying through net banking
-		newPaymentPage.getNetBanking().click();
+		newPaymentPage.getPayOnDelivery().click();
 		Helper.customWait(2);
-		newPaymentPage.getHDFC().click();
-		Helper.customWait(2);
-		newPaymentPage.getPayNetBankingButton().click();
-		Helper.customWait(2);
-		
-		
-		// Store the current window handle
-		String winHandleBefore = driver.getWindowHandle();
-		// Perform the click operation that opens new window
-		// Switch to new window opened
-		for (String winHandle : driver.getWindowHandles()) 
-		{
-			driver.switchTo().window(winHandle);
-		}
-		RayzorpayPage success = new RayzorpayPage(driver);
-		driver.manage().window().maximize();
-		System.out.println("maximized");
-		success.getRayzorpayPage().click();
+		newPaymentPage.getPlaceOrder().click();
 		Helper.customWait(5);
-		System.out.println("Net Banking Order Placed Sucessfully from Chicken Category");
-		// Switch back to original browser (first window)
-		driver.switchTo().window(winHandleBefore);
+				
+		System.out.println("Pay On Delivery Order Placed Sucessfully");
 					
 	}
 }
