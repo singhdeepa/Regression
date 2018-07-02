@@ -218,10 +218,9 @@ public class MarinadesCOD extends BaseTest {
 		System.out.println("maximized");
 		success.getRayzorpayPage().click();
 		Helper.customWait(5);
-<<<<<<< Branch1
-		System.out.println("Peri Peri chicken order palced successfully ")
+
     System.out.println("Peri Peri chicken order palced successfully ");
->>>>>>> master
+
 		
 		
 		// Switch back to original browser (first window)
