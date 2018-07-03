@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="77071" started-at="2018-07-02T10:43:07Z" finished-at="2018-07-02T10:44:24Z">
+  <suite name="Default suite" duration-ms="83247" started-at="2018-07-03T11:48:00Z" finished-at="2018-07-03T11:49:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="77071" started-at="2018-07-02T10:43:07Z" finished-at="2018-07-02T10:44:24Z">
-      <class name="in.licious.test.ChickenPOD">
-        <test-method status="PASS" signature="initFramework()[pri:0, instance:in.licious.test.ChickenPOD@20398b7c]" name="initFramework" is-config="true" duration-ms="170" started-at="2018-07-02T16:13:07Z" finished-at="2018-07-02T16:13:07Z">
+    <test name="Default test" duration-ms="83247" started-at="2018-07-03T11:48:00Z" finished-at="2018-07-03T11:49:23Z">
+      <class name="in.licious.test.ChickenOtherWallets">
+        <test-method status="PASS" signature="initFramework()[pri:0, instance:in.licious.test.ChickenOtherWallets@20398b7c]" name="initFramework" is-config="true" duration-ms="115" started-at="2018-07-03T17:17:59Z" finished-at="2018-07-03T17:18:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initFramework -->
-        <test-method status="PASS" signature="initGlobalConstants()[pri:0, instance:in.licious.test.ChickenPOD@20398b7c]" name="initGlobalConstants" is-config="true" duration-ms="4" started-at="2018-07-02T16:13:07Z" finished-at="2018-07-02T16:13:07Z">
+        <test-method status="PASS" signature="initGlobalConstants()[pri:0, instance:in.licious.test.ChickenOtherWallets@20398b7c]" name="initGlobalConstants" is-config="true" duration-ms="1" started-at="2018-07-03T17:18:00Z" finished-at="2018-07-03T17:18:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initGlobalConstants -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.ChickenPOD@20398b7c]" name="setUp" is-config="true" duration-ms="17581" started-at="2018-07-02T16:13:07Z" finished-at="2018-07-02T16:13:25Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:in.licious.test.ChickenOtherWallets@20398b7c]" name="setUp" is-config="true" duration-ms="19258" started-at="2018-07-03T17:18:00Z" finished-at="2018-07-03T17:18:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void in.licious.test.ChickenPOD.testChicken() throws java.lang.ClassNotFoundException,java.sql.SQLException]]>
+                <![CDATA[public void in.licious.test.ChickenOtherWallets.testChicken() throws java.lang.ClassNotFoundException,java.sql.SQLException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testChicken()[pri:2, instance:in.licious.test.ChickenPOD@20398b7c]" name="testChicken" duration-ms="59363" started-at="2018-07-02T16:13:25Z" finished-at="2018-07-02T16:14:24Z">
+        <test-method status="PASS" signature="testChicken()[pri:3, instance:in.licious.test.ChickenOtherWallets@20398b7c]" name="testChicken" duration-ms="61821" started-at="2018-07-03T17:18:19Z" finished-at="2018-07-03T17:19:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChicken -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.ChickenPOD@20398b7c]" name="tearDown" is-config="true" duration-ms="94" started-at="2018-07-02T16:14:24Z" finished-at="2018-07-02T16:14:24Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:in.licious.test.ChickenOtherWallets@20398b7c]" name="tearDown" is-config="true" duration-ms="2149" started-at="2018-07-03T17:19:21Z" finished-at="2018-07-03T17:19:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testChicken status=SUCCESS method=ChickenPOD.testChicken()[pri:2, instance:in.licious.test.ChickenPOD@20398b7c] output={null}]]]>
+                <![CDATA[[TestResult name=testChicken status=SUCCESS method=ChickenOtherWallets.testChicken()[pri:3, instance:in.licious.test.ChickenOtherWallets@20398b7c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeFramework()[pri:0, instance:in.licious.test.ChickenPOD@20398b7c]" name="closeFramework" is-config="true" duration-ms="262" started-at="2018-07-02T16:14:24Z" finished-at="2018-07-02T16:14:25Z">
+        <test-method status="PASS" signature="closeFramework()[pri:0, instance:in.licious.test.ChickenOtherWallets@20398b7c]" name="closeFramework" is-config="true" duration-ms="389" started-at="2018-07-03T17:19:23Z" finished-at="2018-07-03T17:19:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeFramework -->
-      </class> <!-- in.licious.test.ChickenPOD -->
+      </class> <!-- in.licious.test.ChickenOtherWallets -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

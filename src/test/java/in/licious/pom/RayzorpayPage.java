@@ -10,6 +10,10 @@ public class RayzorpayPage extends BasePage {
 	@FindBy(xpath="//button[.='Success']")
 	private WebElement success;
 	
+	//Input Otp for other wallets example Olamoney
+	@FindBy(xpath="//input[@id='input-otp']")
+	private WebElement rayorPayOlaMoneyOtp;
+	
 	public RayzorpayPage(WebDriver driver) {
 		
 		super (driver);
@@ -21,5 +25,8 @@ public class RayzorpayPage extends BasePage {
 		return success;
 	}
 	
+	public WebElement rayorPayOlaMoneyOtp() {
+		return rayorPayOlaMoneyOtp;
+	}
 
 }

@@ -30,7 +30,7 @@ import in.licious.util.ReadData;
 
 public class ChickenNetBanking extends BaseTest {
 
-	@Test (priority=2)
+	@Test (priority=3)
 	public void testChicken() throws ClassNotFoundException, SQLException 
 	{
 		

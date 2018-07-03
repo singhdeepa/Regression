@@ -23,9 +23,9 @@ import in.licious.util.DataBaseCCC;
 import in.licious.util.DeliverySlot;
 import in.licious.util.Helper;
 
-public class ExoticPOD extends BaseTest {
+public class ExoticOtherWallets extends BaseTest {
 	
-	@Test (priority=23)
+	@Test (priority=22)
 	public void testfishandseafood() throws ClassNotFoundException, SQLException
 	{
 		
@@ -141,12 +141,32 @@ public class ExoticPOD extends BaseTest {
 		}
 		// New Payment Page
 				NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
-				newPaymentPage.getPayOnDelivery().click();
+				
+				// Pay through other wallets for example 
+				newPaymentPage.getpayThroughOtherWallets().click();
 				Helper.customWait(2);
-				newPaymentPage.getPlaceOrder().click();
+				newPaymentPage.getpayThroughAirtelmoney().click();
+				Helper.customWait(2);
+				newPaymentPage.getpayThroughOtherWalletsButton().click();
+				Helper.customWait(2);
+				
+				
+				// Store the current window handle
+				String winHandleBefore = driver.getWindowHandle();
+				// Perform the click operation that opens new window
+				// Switch to new window opened
+				for (String winHandle : driver.getWindowHandles()) 
+				{
+					driver.switchTo().window(winHandle);
+				}
+				RayzorpayPage success = new RayzorpayPage(driver);
+				driver.manage().window().maximize();
+				System.out.println("maximized");
+				success.getRayzorpayPage().click();
 				Helper.customWait(5);
-						
-				System.out.println("Pay On Delivery Order Placed Sucessfully");
+				System.out.println("Other Wallets Order Placed Sucessfully from Chicken Category");
+				// Switch back to original browser (first window)
+				driver.switchTo().window(winHandleBefore);
 							
 		
 	}

@@ -2,16 +2,13 @@ package in.licious.test;
 
 import java.sql.SQLException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import in.licious.pom.ColdCutsPage;
-import in.licious.pom.ExoticPage;
-import in.licious.pom.FishandSeafoodPage;
+import in.licious.pom.ChickenPage;
 import in.licious.pom.HomePage;
 import in.licious.pom.NewAddressPage;
 import in.licious.pom.NewCheckoutPage;
@@ -20,15 +17,13 @@ import in.licious.pom.NewLoginFlow;
 import in.licious.pom.NewPaymentPage;
 import in.licious.pom.RayzorpayPage;
 import in.licious.util.DataBaseCCC;
-import in.licious.util.DeliverySlot;
 import in.licious.util.Helper;
 
-public class ExoticPOD extends BaseTest {
-	
-	@Test (priority=23)
-	public void testfishandseafood() throws ClassNotFoundException, SQLException
+public class ChickenOtherWallets extends BaseTest {
+
+	@Test (priority=4)
+	public void testChicken() throws ClassNotFoundException, SQLException 
 	{
-		
 		
 		// Sign In with New Login Flow
 		NewLoginFlow newlogin = new NewLoginFlow(driver);
@@ -78,20 +73,20 @@ public class ExoticPOD extends BaseTest {
 		helper.clickOnElement(driver, newlogin.getpasswordloginBtn());
 		Helper.customWait(5);
 		
-				
-		// Click on Exotic category
+		
+		
+		// Click on Chicken category
 		HomePage home=new HomePage(driver);
-		home.getexoticCat().click();
+		home.getChickenCat().click();
 		Helper.customWait(4);
-
-		// Add Lamb_Shanks to cart
-		ExoticPage exoticPage =new ExoticPage(driver);
-		WebElement addtocart= exoticPage.getLambShanks();
+		
+		// Add Chicken_Thigh to cart
+		ChickenPage chickenPage = new ChickenPage(driver);
+		WebElement addtocart = chickenPage.getAddToCartBtn1();
 		helper.scrollBar(driver, addtocart );
 		Helper.customWait(4);
 		System.out.println("pass");
-		
-		
+
 		// New Checkout flow
 		
 		// New Cart Page
@@ -108,48 +103,40 @@ public class ExoticPOD extends BaseTest {
 		Helper.customWait(2);
 		
 		// New Delivery Summary page
-		//NewDeliverySummaryPage  newDeliverySummary = new NewDeliverySummaryPage(driver);
+		NewDeliverySummaryPage  newDeliverySummary = new NewDeliverySummaryPage(driver);
+		newDeliverySummary.getProceedToPaymentBtn().click();
+		Helper.customWait(2);
 		
-		// Click on OTP Login
+		// New Payment Page
+		NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
+		
+		// Pay through other wallets for example 
+		newPaymentPage.getpayThroughOtherWallets().click();
+		Helper.customWait(2);
+		newPaymentPage.getpayThroughAirtelmoney().click();
+		Helper.customWait(2);
+		newPaymentPage.getpayThroughOtherWalletsButton().click();
+		Helper.customWait(2);
+		
+		
+		// Store the current window handle
+		String winHandleBefore = driver.getWindowHandle();
+		// Perform the click operation that opens new window
+		// Switch to new window opened
+		for (String winHandle : driver.getWindowHandles()) 
+		{
+			driver.switchTo().window(winHandle);
+		}
+		RayzorpayPage success = new RayzorpayPage(driver);
+		driver.manage().window().maximize();
+		System.out.println("maximized");
+		success.getRayzorpayPage().click();
+		Helper.customWait(5);
+		System.out.println("Other Wallets Order Placed Sucessfully from Chicken Category");
+		// Switch back to original browser (first window)
+		driver.switchTo().window(winHandleBefore);
 				
 		
-		// Delivery Slot Selection Express or Scheduled
-		NewDeliverySummaryPage  newDeliverySummary = new NewDeliverySummaryPage(driver);
-		WebElement TxtBoxContent = driver.findElement(By.xpath("//div[@class='slots-selector']"));
-		Helper.customWait(2);
-		System.out.println("Printing " + TxtBoxContent.getText());
-		Helper.customWait(2);
-		
-		if (TxtBoxContent.getText().equalsIgnoreCase("Today 120 MIN"))
-		{
-			System.out.println("Order Placing as Express Delivery");
-			newDeliverySummary.getProceedToPaymentBtn().click();	
-			Helper.customWait(2);
-		}
-		
-		else 
-		{
-			System.out.println("Order Placing as Scheduled Delivery");
-			
-			// Select the Delivery Slot for scheduled delivery
-			newDeliverySummary.getSelectDeliverySlot().click();
-			Helper.customWait(2);
-			newDeliverySummary.getTimeSlot().click();
-			Helper.customWait(2);
-			newDeliverySummary.getProceedToPaymentBtn().click();
-			Helper.customWait(2);
-		}
-		// New Payment Page
-				NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
-				newPaymentPage.getPayOnDelivery().click();
-				Helper.customWait(2);
-				newPaymentPage.getPlaceOrder().click();
-				Helper.customWait(5);
-						
-				System.out.println("Pay On Delivery Order Placed Sucessfully");
-							
-		
+					
 	}
-	
-
 }

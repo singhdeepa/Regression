@@ -9,8 +9,6 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import in.licious.pom.ColdCutsPage;
-import in.licious.pom.ExoticPage;
 import in.licious.pom.FishandSeafoodPage;
 import in.licious.pom.HomePage;
 import in.licious.pom.NewAddressPage;
@@ -23,9 +21,9 @@ import in.licious.util.DataBaseCCC;
 import in.licious.util.DeliverySlot;
 import in.licious.util.Helper;
 
-public class ExoticPOD extends BaseTest {
+public class EggsSavedCards extends BaseTest {
 	
-	@Test (priority=23)
+	@Test (priority=18)
 	public void testfishandseafood() throws ClassNotFoundException, SQLException
 	{
 		
@@ -79,14 +77,14 @@ public class ExoticPOD extends BaseTest {
 		Helper.customWait(5);
 		
 				
-		// Click on Exotic category
+		// Click on FishAndSeaFood category
 		HomePage home=new HomePage(driver);
-		home.getexoticCat().click();
+		home.getfishSeafoodCat().click();
 		Helper.customWait(4);
-
-		// Add Lamb_Shanks to cart
-		ExoticPage exoticPage =new ExoticPage(driver);
-		WebElement addtocart= exoticPage.getLambShanks();
+		
+		// Add Basa_Fillet to cart
+		FishandSeafoodPage fishandseafoodPage =new FishandSeafoodPage(driver);
+		WebElement addtocart= fishandseafoodPage.getBasaFillet();
 		helper.scrollBar(driver, addtocart );
 		Helper.customWait(4);
 		System.out.println("pass");
@@ -141,12 +139,15 @@ public class ExoticPOD extends BaseTest {
 		}
 		// New Payment Page
 				NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
-				newPaymentPage.getPayOnDelivery().click();
+				
+				// Saved card payment 
+				newPaymentPage.getSavedCard1().click();
 				Helper.customWait(2);
-				newPaymentPage.getPlaceOrder().click();
+				//helper.enterText(driver, newlogin.getMobileNumber(), userName);
+				helper.enterText(driver, newPaymentPage.getCvv1(), "111");
 				Helper.customWait(5);
-						
-				System.out.println("Pay On Delivery Order Placed Sucessfully");
+				newPaymentPage.getSavedCardButton().click();
+				Helper.customWait(5);
 							
 		
 	}

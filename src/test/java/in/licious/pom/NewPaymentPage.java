@@ -29,13 +29,41 @@ public class NewPaymentPage {
 	@FindBy(xpath="//li[@data-payname='saved_payments']")
 	private WebElement savedPayments;
 	
-	@FindBy(xpath="//li[@class='selected']")
+	@FindBy(xpath="/html/body/div[1]/div[1]/div[1]/div[3]/div[3]/div/div[2]/div[8]/div/ul/li[1]/span[1]")
 	private WebElement savedCard1;
 	
-	@FindBy(xpath="//button[@data-mode='saved_payments']")
-	private WebElement paySavedCard;
+	@FindBy(xpath="/html/body/div[1]/div[1]/div[1]/div[3]/div[3]/div/div[2]/div[8]/div/ul/li[1]/p/input")
+	private WebElement cvv1;
+	
+	@FindBy(xpath="//div[@class='payment-cta']")
+	private WebElement paySavedCardButton;
+	
+	// Credit and Debit card Elements
+	@FindBy(xpath="//li[@data-payname='card']")
+	private WebElement creditAndDebitCard;
+	@FindBy(xpath="//input[@data-type='card-num']")
+	private WebElement enterCardNo;
+	@FindBy(xpath="//input[@data-type='card-mon']")
+	private WebElement enterMonth;
+	@FindBy(xpath="//input[@data-type='card-year']")
+	private WebElement enterYear;
+	@FindBy(xpath="//input[@data-type='card-cvv']")
+	private WebElement enterCvv;
+	@FindBy(xpath="//input[@data-type='card-name']")
+	private WebElement enterName;
+	@FindBy(xpath="//button[@data-mode='card']")
+	private WebElement payCreditAndDebitCardButton;
 	
 	
+	// Other Wallet Elements
+	@FindBy(xpath="//li[@data-payname='wallet']")
+	private WebElement payThroughOtherWallets;
+	@FindBy(xpath="//li[@data-paymode='olamoney']")
+	private WebElement payThroughOlaMoney;
+	@FindBy(xpath="//li[@data-paymode='airtelmoney']")
+	private WebElement payThroughAirtelmoney;
+	@FindBy(xpath="//button[@data-mode='wallet']")
+	private WebElement payThroughOtherWalletsButton;
 	
 	
 	public NewPaymentPage(WebDriver driver){
@@ -71,7 +99,53 @@ public class NewPaymentPage {
 		return payNetBanking;
 	}
 	
-	public WebElement getSavedCardButton(){
-		return paySavedCard;
+	public WebElement getSavedCard1(){
+		return savedCard1;
 	}
+	
+	public WebElement getCvv1(){
+		return cvv1;
+	}
+	
+	public WebElement getSavedCardButton(){
+		return paySavedCardButton;
+	}
+	
+	// Credit and Debit card Elements
+	public WebElement getCreditAndDebitCard(){
+		return creditAndDebitCard;
+	}
+	public WebElement getenterCardNo(){
+		return enterCardNo;
+	}
+	public WebElement getenterMonth(){
+		return enterMonth;
+	}
+	public WebElement getenterYear(){
+		return enterYear;
+	}
+	public WebElement getenterCvv(){
+		return enterCvv;
+	}
+	public WebElement getenterName(){
+		return enterName;
+	}
+	public WebElement getpayCreditAndDebitCardButton(){
+		return payCreditAndDebitCardButton;
+	}
+	
+	// Other wallet elements
+	public WebElement getpayThroughOtherWallets(){
+		return payThroughOtherWallets;
+	}
+	public WebElement getpayThroughOlaMoney(){
+		return payThroughOlaMoney;
+	}
+	public WebElement getpayThroughAirtelmoney(){
+		return payThroughAirtelmoney;
+	}
+	public WebElement getpayThroughOtherWalletsButton(){
+		return payThroughOtherWalletsButton;
+	}
+	
 }

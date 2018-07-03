@@ -23,9 +23,9 @@ import in.licious.util.DataBaseCCC;
 import in.licious.util.DeliverySlot;
 import in.licious.util.Helper;
 
-public class ExoticPOD extends BaseTest {
+public class ExoticSavedCards extends BaseTest {
 	
-	@Test (priority=23)
+	@Test (priority=24)
 	public void testfishandseafood() throws ClassNotFoundException, SQLException
 	{
 		
@@ -141,12 +141,15 @@ public class ExoticPOD extends BaseTest {
 		}
 		// New Payment Page
 				NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
-				newPaymentPage.getPayOnDelivery().click();
+				
+				// Saved card payment 
+				newPaymentPage.getSavedCard1().click();
 				Helper.customWait(2);
-				newPaymentPage.getPlaceOrder().click();
+				//helper.enterText(driver, newlogin.getMobileNumber(), userName);
+				helper.enterText(driver, newPaymentPage.getCvv1(), "111");
 				Helper.customWait(5);
-						
-				System.out.println("Pay On Delivery Order Placed Sucessfully");
+				newPaymentPage.getSavedCardButton().click();
+				Helper.customWait(5);
 							
 		
 	}

@@ -23,9 +23,9 @@ import in.licious.util.DataBaseCCC;
 import in.licious.util.DeliverySlot;
 import in.licious.util.Helper;
 
-public class ExoticPOD extends BaseTest {
+public class ExoticCreditAndDebitCards extends BaseTest {
 	
-	@Test (priority=23)
+	@Test (priority=20)
 	public void testfishandseafood() throws ClassNotFoundException, SQLException
 	{
 		
@@ -141,12 +141,40 @@ public class ExoticPOD extends BaseTest {
 		}
 		// New Payment Page
 				NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
-				newPaymentPage.getPayOnDelivery().click();
+				
+				// Credit and Debit card payments 
+				newPaymentPage.getCreditAndDebitCard().click();
 				Helper.customWait(2);
-				newPaymentPage.getPlaceOrder().click();
+				//helper.enterText(driver, newlogin.getMobileNumber(), userName);
+				helper.enterText(driver, newPaymentPage.getenterCardNo(), "4111111111111111");
+				Helper.customWait(2);
+				helper.enterText(driver, newPaymentPage.getenterMonth(), "04");
+				Helper.customWait(2);
+				helper.enterText(driver, newPaymentPage.getenterYear(), "2020");
+				Helper.customWait(2);
+				helper.enterText(driver, newPaymentPage.getenterCvv(), "111");
+				Helper.customWait(2);
+				helper.enterText(driver, newPaymentPage.getenterName(), "Vishwa");
+				Helper.customWait(2);
+				newPaymentPage.getpayCreditAndDebitCardButton().click();
 				Helper.customWait(5);
-						
-				System.out.println("Pay On Delivery Order Placed Sucessfully");
+				
+				// Store the current window handle
+				String winHandleBefore = driver.getWindowHandle();
+				// Perform the click operation that opens new window
+				// Switch to new window opened
+				for (String winHandle : driver.getWindowHandles()) 
+				{
+					driver.switchTo().window(winHandle);
+				}
+				RayzorpayPage success = new RayzorpayPage(driver);
+				driver.manage().window().maximize();
+				System.out.println("maximized");
+				success.getRayzorpayPage().click();
+				Helper.customWait(5);
+				System.out.println("Credit and Debit card Order Placed Sucessfully from Chicken Category");
+				// Switch back to original browser (first window)
+				driver.switchTo().window(winHandleBefore);
 							
 		
 	}

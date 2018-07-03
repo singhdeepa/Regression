@@ -20,7 +20,7 @@ import in.licious.util.Helper;
 
 public class ExoticCOD extends BaseTest {
 	
-	@Test (priority=10)
+	@Test (priority=19)
 	public void testexotic() throws ClassNotFoundException, SQLException
 	{
 		

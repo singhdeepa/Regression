@@ -10,7 +10,7 @@
       <class name="in.licious.test.MarinadesNetBanking"/>
       <class name="in.licious.test.WeekendTreatsCOD"/>
       <class name="in.licious.test.MarinadesPOD"/>
-      <!-- <class name="in.licious.test.InvalidLogin"/> -->
+      <class name="in.licious.test.InvalidLogin"/>
       <class name="in.licious.test.WeekendTreatsNetBanking"/>
       <class name="in.licious.test.FishandSeafoodNetBanking"/>
       <!-- <class name="in.licious.test.TestNGgroups"/> -->
@@ -21,12 +21,10 @@
       <class name="in.licious.test.EggsPOD"/>
       <class name="in.licious.test.FishandSeafoodCOD"/>
       <class name="in.licious.test.PicklesPOD"/>
-      <class name="in.licious.test.CheckOut"/>
       <class name="in.licious.test.ChickenPOD"/>
-      <!-- <class name="in.licious.test.BaseTest"/> -->
+      <class name="in.licious.test.BaseTest"/>
       <class name="in.licious.test.FishandSeafoodPOD"/>
       <class name="in.licious.test.ColdCutsNetBanking"/>
-      <class name="in.licious.test.CheckoutDeliveryInfo"/>
       <class name="in.licious.test.ColdCutsPOD"/>
       <class name="in.licious.test.RedMeatsNetBanking"/>
       <class name="in.licious.test.EggsCOD"/>
