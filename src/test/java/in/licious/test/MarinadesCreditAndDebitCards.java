@@ -19,17 +19,14 @@ import in.licious.pom.NewCheckoutPage;
 import in.licious.pom.NewDeliverySummaryPage;
 import in.licious.pom.NewLoginFlow;
 import in.licious.pom.NewPaymentPage;
-import in.licious.pom.PicklesPage;
 import in.licious.pom.RayzorpayPage;
-import in.licious.pom.RedMeatsPage;
-import in.licious.pom.WeekendTreatsPage;
 import in.licious.util.DataBaseCCC;
 import in.licious.util.DeliverySlot;
 import in.licious.util.Helper;
 
-public class WeekendTreatsNetBanking extends BaseTest {
+public class MarinadesCreditAndDebitCards extends BaseTest {
 	
-	@Test (priority=50)
+	@Test (priority=32)
 	public void testfishandseafood() throws ClassNotFoundException, SQLException
 	{
 		
@@ -83,14 +80,14 @@ public class WeekendTreatsNetBanking extends BaseTest {
 		Helper.customWait(5);
 		
 				
-		// Click on Weekend Treats category
+		// Click on Marinades category
 		HomePage home=new HomePage(driver);
-		home.getweekendtreatsCat().click();
+		home.getmarinadesCat().click();
 		Helper.customWait(4);
-		
-		// Add White_Pomfret to cart
-		WeekendTreatsPage weekendtreatsPage =new WeekendTreatsPage(driver);
-		WebElement addtocart= weekendtreatsPage.getChickenSausage();
+
+		// Add Peri_Peri_Chicken_Hot to cart
+		MarinadesPage marinadesPage =new MarinadesPage(driver);
+		WebElement addtocart= marinadesPage.getPeriPeriChickenHot();
 		helper.scrollBar(driver, addtocart );
 		Helper.customWait(4);
 		System.out.println("pass");
@@ -144,35 +141,41 @@ public class WeekendTreatsNetBanking extends BaseTest {
 			Helper.customWait(2);
 		}
 		// New Payment Page
-				NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
-				
-				// Paying through net banking
-				newPaymentPage.getNetBanking().click();
-				Helper.customWait(5);
-				newPaymentPage.getHDFC().click();
-				Helper.customWait(5);
-				newPaymentPage.getPayNetBankingButton().click();
-				Helper.customWait(5);
-				
-				
-				// Store the current window handle
-				String winHandleBefore = driver.getWindowHandle();
-				// Perform the click operation that opens new window
-				// Switch to new window opened
-				for (String winHandle : driver.getWindowHandles()) 
-				{
-					driver.switchTo().window(winHandle);
-				}
-				RayzorpayPage success = new RayzorpayPage(driver);
-				driver.manage().window().maximize();
-				System.out.println("maximized");
-				success.getRayzorpayPage().click();
-				Helper.customWait(5);
-				System.out.println("Net Banking Order Placed Sucessfully from Chicken Category");
-				// Switch back to original browser (first window)
-				driver.switchTo().window(winHandleBefore);
-							
+		NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
 		
+		// Credit and Debit card payments 
+		newPaymentPage.getCreditAndDebitCard().click();
+		Helper.customWait(2);
+		//helper.enterText(driver, newlogin.getMobileNumber(), userName);
+		helper.enterText(driver, newPaymentPage.getenterCardNo(), "4111111111111111");
+		Helper.customWait(2);
+		helper.enterText(driver, newPaymentPage.getenterMonth(), "04");
+		Helper.customWait(2);
+		helper.enterText(driver, newPaymentPage.getenterYear(), "2020");
+		Helper.customWait(2);
+		helper.enterText(driver, newPaymentPage.getenterCvv(), "111");
+		Helper.customWait(2);
+		helper.enterText(driver, newPaymentPage.getenterName(), "Vishwa");
+		Helper.customWait(2);
+		newPaymentPage.getpayCreditAndDebitCardButton().click();
+		Helper.customWait(5);
+		
+		// Store the current window handle
+		String winHandleBefore = driver.getWindowHandle();
+		// Perform the click operation that opens new window
+		// Switch to new window opened
+		for (String winHandle : driver.getWindowHandles()) 
+		{
+			driver.switchTo().window(winHandle);
+		}
+		RayzorpayPage success = new RayzorpayPage(driver);
+		driver.manage().window().maximize();
+		System.out.println("maximized");
+		success.getRayzorpayPage().click();
+		Helper.customWait(5);
+		System.out.println("Credit and Debit card Order Placed Sucessfully from Chicken Category");
+		// Switch back to original browser (first window)
+		driver.switchTo().window(winHandleBefore);
 	}
 	
 

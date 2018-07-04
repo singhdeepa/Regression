@@ -23,7 +23,7 @@ import in.licious.util.Helper;
 
 public class FishandSeafoodPOD extends BaseTest {
 	
-	@Test (priority=15)
+	@Test (priority=29)
 	public void testfishandseafood() throws ClassNotFoundException, SQLException
 	{
 		

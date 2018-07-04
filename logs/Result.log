@@ -5783,3 +5783,43 @@
 2018-07-03 17:18:00,084 - [in.licious.test.ChickenOtherWallets] - INFO - 5 
 2018-07-03 17:18:18,294 - [in.licious.test.ChickenOtherWallets] - INFO - chrome is launched 
 2018-07-03 17:19:23,316 - [in.licious.test.ChickenOtherWallets] - INFO - chrome is closed 
+2018-07-03 18:05:49,699 - [in.licious.test.InvalidLogin] - INFO - framework is initialised 
+2018-07-03 18:05:49,705 - [in.licious.test.InvalidLogin] - INFO - chrome 
+2018-07-03 18:05:49,705 - [in.licious.test.InvalidLogin] - INFO - http://web.licious.in 
+2018-07-03 18:05:49,705 - [in.licious.test.InvalidLogin] - INFO - 9880335493 
+2018-07-03 18:05:49,705 - [in.licious.test.InvalidLogin] - INFO - 123456 
+2018-07-03 18:05:49,706 - [in.licious.test.InvalidLogin] - INFO - 5 
+2018-07-03 18:06:02,860 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:06:19,239 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:06:32,852 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:07:36,865 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:07:46,399 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:09:00,023 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:09:08,741 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:10:10,389 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:10:19,989 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:11:22,190 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:11:29,507 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:12:23,403 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:12:34,552 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:13:35,897 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:25:15,444 - [in.licious.test.InvalidLogin] - INFO - framework is initialised 
+2018-07-03 18:25:15,455 - [in.licious.test.InvalidLogin] - INFO - chrome 
+2018-07-03 18:25:15,456 - [in.licious.test.InvalidLogin] - INFO - http://web.licious.in 
+2018-07-03 18:25:15,456 - [in.licious.test.InvalidLogin] - INFO - 9880335493 
+2018-07-03 18:25:15,456 - [in.licious.test.InvalidLogin] - INFO - 123456 
+2018-07-03 18:25:15,457 - [in.licious.test.InvalidLogin] - INFO - 5 
+2018-07-03 18:25:37,039 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:25:42,966 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:25:54,826 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:27:02,351 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:27:12,479 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:28:32,082 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:28:41,590 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:29:46,293 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:29:55,146 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:30:59,845 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:31:11,976 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:32:12,915 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 
+2018-07-03 18:32:26,068 - [in.licious.test.InvalidLogin] - INFO - chrome is launched 
+2018-07-03 18:33:31,598 - [in.licious.test.InvalidLogin] - INFO - chrome is closed 

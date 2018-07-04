@@ -27,9 +27,9 @@ import in.licious.util.DataBaseCCC;
 import in.licious.util.DeliverySlot;
 import in.licious.util.Helper;
 
-public class WeekendTreatsNetBanking extends BaseTest {
+public class WeekendTreatsOtherWallets extends BaseTest {
 	
-	@Test (priority=50)
+	@Test (priority=51)
 	public void testfishandseafood() throws ClassNotFoundException, SQLException
 	{
 		
@@ -144,33 +144,33 @@ public class WeekendTreatsNetBanking extends BaseTest {
 			Helper.customWait(2);
 		}
 		// New Payment Page
-				NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
-				
-				// Paying through net banking
-				newPaymentPage.getNetBanking().click();
-				Helper.customWait(5);
-				newPaymentPage.getHDFC().click();
-				Helper.customWait(5);
-				newPaymentPage.getPayNetBankingButton().click();
-				Helper.customWait(5);
-				
-				
-				// Store the current window handle
-				String winHandleBefore = driver.getWindowHandle();
-				// Perform the click operation that opens new window
-				// Switch to new window opened
-				for (String winHandle : driver.getWindowHandles()) 
-				{
-					driver.switchTo().window(winHandle);
-				}
-				RayzorpayPage success = new RayzorpayPage(driver);
-				driver.manage().window().maximize();
-				System.out.println("maximized");
-				success.getRayzorpayPage().click();
-				Helper.customWait(5);
-				System.out.println("Net Banking Order Placed Sucessfully from Chicken Category");
-				// Switch back to original browser (first window)
-				driver.switchTo().window(winHandleBefore);
+		NewPaymentPage newPaymentPage = new NewPaymentPage(driver);
+		
+		// Pay through other wallets for example 
+		newPaymentPage.getpayThroughOtherWallets().click();
+		Helper.customWait(2);
+		newPaymentPage.getpayThroughAirtelmoney().click();
+		Helper.customWait(2);
+		newPaymentPage.getpayThroughOtherWalletsButton().click();
+		Helper.customWait(2);
+		
+		
+		// Store the current window handle
+		String winHandleBefore = driver.getWindowHandle();
+		// Perform the click operation that opens new window
+		// Switch to new window opened
+		for (String winHandle : driver.getWindowHandles()) 
+		{
+			driver.switchTo().window(winHandle);
+		}
+		RayzorpayPage success = new RayzorpayPage(driver);
+		driver.manage().window().maximize();
+		System.out.println("maximized");
+		success.getRayzorpayPage().click();
+		Helper.customWait(5);
+		System.out.println("Other Wallets Order Placed Sucessfully from Chicken Category");
+		// Switch back to original browser (first window)
+		driver.switchTo().window(winHandleBefore);
 							
 		
 	}
