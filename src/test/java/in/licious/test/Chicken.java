@@ -30,7 +30,7 @@ import in.licious.util.ReadData;
 
 public class Chicken extends BaseTest {
 
-	@Test (priority=2)
+	@Test (priority=1)
 	public void testChicken() throws ClassNotFoundException, SQLException 
 	{
 		
@@ -240,8 +240,8 @@ public class Chicken extends BaseTest {
 		Helper.customWait(5);
 		System.out.println("Pass19");
 
-		// WebElement proceedtoPay=checkOutDelivery.getProceedtoPaybtn().click();
-		// helper.scrollBar(driver, proceedtoPay);
+		WebElement proceedtoPay=checkOutDelivery.getProceedtoPaybtn().click();
+		helper.scrollBar(driver, proceedtoPay);
 
 		DeliverySummaryPage proceedtopay = new DeliverySummaryPage(driver);
 		proceedtopay.getProceedToPaymentBtn().click();

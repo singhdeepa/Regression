@@ -28,7 +28,7 @@ import in.licious.util.Helper;
 
 public class PicklesCOD extends BaseTest {
 	
-	@Test (priority=8)
+	@Test (priority=37)
 	public void testpickles() throws ClassNotFoundException, SQLException
 	{
 		

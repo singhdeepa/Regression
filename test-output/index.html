@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\VISHWA\AppData\Local\Temp\testng-eclipse--1347435805\testng-customsuite.xml</span>
+                    <span>C:\Users\VISHWA\AppData\Local\Temp\testng-eclipse--559594498\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="in.licious.test.FishandSeafoodCOD" hash-for-method="testfishandseafood">testfishandseafood</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="in.licious.test.FishandSeafoodPOD2" hash-for-method="testfishandseafood">testfishandseafood</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">in.licious.test.FishandSeafoodCOD</span>
+              <span class="class-name">in.licious.test.FishandSeafoodPOD2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -128,17 +128,15 @@
                   <a name="testfishandseafood">
                   </a> <!-- testfishandseafood -->
                   <span class="method-name">testfishandseafood</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@data-payname=&apos;cod&apos;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;slots-selector&quot;&gt;...&lt;/div&gt; is not clickable at point (304, 21). Other element would receive the click: &lt;div class=&quot;location-search&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;PF0Q7VST-BLR&apos;, ip: &apos;192.168.43.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+System info: host: &apos;PF0Q7VST-BLR&apos;, ip: &apos;192.168.2.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\VISHWA\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: 1a41ae66dc06e1946aa5ab34c0bd3c23
-*** Element info: {Using=xpath, value=//li[@data-payname=&apos;cod&apos;]}
+Session ID: 04d816f4d30737e5e919fc16ee2b73c8
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -151,14 +149,15 @@ Session ID: 1a41ae66dc06e1946aa5ab34c0bd3c23
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at in.licious.test.FishandSeafoodCOD.testfishandseafood(FishandSeafoodCOD.java:261)
+	at in.licious.test.FishandSeafoodPOD2.testfishandseafood(FishandSeafoodPOD2.java:174)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -193,7 +192,7 @@ Session ID: 1a41ae66dc06e1946aa5ab34c0bd3c23
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\VISHWA\AppData\Local\Temp\testng-eclipse--1347435805\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\VISHWA\AppData\Local\Temp\testng-eclipse--559594498\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -202,7 +201,7 @@ Session ID: 1a41ae66dc06e1946aa5ab34c0bd3c23
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;in.licious.test.FishandSeafoodCOD&quot;/&gt;
+      &lt;class name=&quot;in.licious.test.FishandSeafoodPOD2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -245,8 +244,8 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testfishandseafood')
-data.setCell(0, 2, 'in.licious.test.FishandSeafoodCOD')
-data.setCell(0, 3, 67972);
+data.setCell(0, 2, 'in.licious.test.FishandSeafoodPOD2')
+data.setCell(0, 3, 68235);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -277,32 +276,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">in.licious.test.FishandSeafoodCOD</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">in.licious.test.FishandSeafoodPOD2</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initFramework</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">initGlobalConstants</span>
-                <span class="method-start">127 ms</span>
+                <span class="method-start">132 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void in.licious.test.FishandSeafoodCOD.testfishandseafood() throws java.lang.ClassNotFoundExc...)</span>
-                <span class="method-start">138 ms</span>
+                <span class="method-name">setUp(public void in.licious.test.FishandSeafoodPOD2.testfishandseafood() throws java.lang.ClassNotFoundEx...)</span>
+                <span class="method-start">143 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testfishandseafood</span>
-                <span class="method-start">20829 ms</span>
+                <span class="method-start">11983 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testfishandseafood status=FAILURE method=FishandSeafoodCOD.testfishandseafood()[pri...)</span>
-                <span class="method-start">89200 ms</span>
+                <span class="method-name">tearDown([TestResult name=testfishandseafood status=FAILURE method=FishandSeafoodPOD2.testfishandseafood()[pr...)</span>
+                <span class="method-start">80450 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeFramework</span>
-                <span class="method-start">89282 ms</span>
+                <span class="method-start">80590 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -30,7 +30,7 @@ import in.licious.util.ReadData;
 
 public class ChickenNetBanking extends BaseTest {
 
-	@Test (priority=2)
+	@Test (priority=3)
 	public void testChicken() throws ClassNotFoundException, SQLException 
 	{
 		
@@ -124,7 +124,7 @@ public class ChickenNetBanking extends BaseTest {
 		Helper.customWait(2);
 		newPaymentPage.getHDFC().click();
 		Helper.customWait(2);
-		newPaymentPage.getPayButton().click();
+		newPaymentPage.getPayNetBankingButton().click();
 		Helper.customWait(2);
 		
 		
