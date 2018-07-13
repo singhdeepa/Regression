@@ -70,7 +70,7 @@ public class ColdCutsPOD extends BaseTest {
 		String s1=db1.otp1;
 		System.out.println("otp1");
 		System.out.println("pass2");
-		System.out.println(s1);
+		System.out.println(s1);		
 		System.out.println("pass3");
 		
 		// Click on Login Button
