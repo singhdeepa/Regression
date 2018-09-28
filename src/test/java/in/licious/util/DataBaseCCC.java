@@ -12,7 +12,7 @@ public class DataBaseCCC {
 	
 	
 		public String otp1=null;
-		public DataBaseCCC(WebDriver driver) throws ClassNotFoundException, SQLException {
+		public String dataBaseCCC(WebDriver driver) throws ClassNotFoundException, SQLException {
 		// TODO Auto-generated constructor stub
 			
 			
@@ -54,7 +54,7 @@ public class DataBaseCCC {
 			
 				System.out.println("Pass 33");
 				//ResultSet res = con.createStatement().executeQuery(" use licious");
-				ResultSet res1 = con.createStatement().executeQuery(" select otp from customers where phone='9880335493' ");
+				ResultSet res1 = con.createStatement().executeQuery("select otp from customers where phone='9880335493'");
 				
 				while (res1.next())
 				{
@@ -77,6 +77,7 @@ public class DataBaseCCC {
 				res1.close();
 		
 			Class.forName("com.mysql.cj.jdbc.Driver");
+			return otp1;
 		//} 
 		}
 				

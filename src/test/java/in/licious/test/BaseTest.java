@@ -33,7 +33,7 @@ public abstract class BaseTest implements  AutomationConstant {
 	private static String url;
 	public static String userName;
 	public  static  String passWord;
-	public static String location;;
+	public static String location;
 	public static int implicitWait;
 	public static ExtentReports ereport;
 	public static ExtentTest etest;
@@ -99,5 +99,6 @@ public abstract class BaseTest implements  AutomationConstant {
 	@AfterSuite
 	public void closeFramework(){
 		ereport.flush();
+		driver.quit();
 	}
 }

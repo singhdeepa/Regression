@@ -17,10 +17,10 @@ public class NewLoginFlow extends BasePage{
 	private WebElement proceedbtn;
 	
 	
-	@FindBy(xpath="//input[@class='login-otp']")
+	@FindBy(xpath="//input[@class='signup-otp']")
 	private WebElement enterotp;
 	
-	@FindBy(xpath="//button[@class='btns otp-login enabled']")
+	@FindBy(xpath="//div[@class='cta-block']")
 	private WebElement otploginBtn;
 
 	@FindBy(xpath="//li[.='Password Login']")
@@ -31,6 +31,9 @@ public class NewLoginFlow extends BasePage{
 	
 	@FindBy(xpath="//button[@class='btns password-login enabled']")
 	private WebElement passwordloginBtn;
+	
+	@FindBy(xpath="//li[@class='gp']")
+	private WebElement googleButton;
 	
 	public NewLoginFlow(WebDriver driver){
 		super(driver);
@@ -77,8 +80,99 @@ public class NewLoginFlow extends BasePage{
 		return subscribe;
 	}
 	
-	public void login() {
-		
-		
+	public WebElement getGoogleLink()
+	{
+		return googleButton;
 	}
-}
+	@FindBy(xpath="//span[@class='fb-login']")
+	private WebElement FacebookLink;
+	public WebElement getFaceBookLink()
+	{
+		return FacebookLink;
+	}
+	@FindBy(xpath="//input[@type='email']")
+	private WebElement emailText;
+	public WebElement getEmail()
+	{
+		return emailText;
+	}
+	@FindBy(xpath="//span[text()='Next']")
+	private WebElement nextButton;
+	public WebElement getnextButton()
+	{
+		return nextButton;
+	}
+
+    @FindBy(xpath="//input[@type='password']")
+    private WebElement passwordText;
+    public WebElement getPassword()
+    {
+    	return passwordText;
+    }
+    @FindBy(xpath="//input[@name='email']")
+    private WebElement emailTextBoxFB;
+    public WebElement getEmailtextFB()
+    {
+    	return emailTextBoxFB;
+    }
+    @FindBy(xpath="//input[@name='pass']")
+    private WebElement passwordTextFB;
+    public WebElement getpasswordTextFB()
+    {
+    	return passwordTextFB;
+    }
+    @FindBy(xpath="//input[@value='Log In']")
+    private WebElement loginButton;
+    public WebElement getLoginButton()
+    {
+    	return loginButton;
+    }
+    @FindBy(xpath="//li[@class='option selected']")
+    private  WebElement OTPLogin;
+    public WebElement getOTPlogin()
+    {
+    	return OTPLogin;
+    }
+    @FindBy(xpath="//input[@class='signup-otp']")
+    private WebElement enterOTP;
+    public WebElement getOTP()
+    {
+    	return enterOTP;
+    }
+    @FindBy(xpath="//input[@class='signup-pass-otp']")
+    private WebElement enterPassOTP;
+    public WebElement getPassOTP()
+    {
+    	return enterPassOTP;
+    }
+    @FindBy(xpath="//input[@class='new-pass']")
+    private WebElement enterNewpassword;
+    public WebElement getEnterNewPassword()
+    {
+    	return enterNewpassword;
+    }
+    @FindBy(xpath="//input[@class='confirm-pass']")
+    private WebElement confirmPassword;
+    public WebElement getEnterconfirmPassword()
+    {
+    	return confirmPassword;
+    }
+    @FindBy(xpath="//button[@class='btns otp-signup enabled']")
+    private WebElement loginwithOTP;
+    public WebElement getclickOTP()
+    {
+    	return loginwithOTP;
+    }
+    @FindBy(xpath="//button[@class='btns password-signup enabled']")
+    private WebElement loginBtn;
+    public WebElement getloginBTN()
+    {
+    	return loginBtn;
+    }
+    @FindBy(xpath="//input[@class='login-otp']")
+    private WebElement loginOTP;
+    public WebElement enterLoginOTP()
+    {
+    	return loginOTP;
+    }
+}  

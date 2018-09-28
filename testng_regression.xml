@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="in.licious.test.ChickenCategory_Regression"/>
+      <class name="in.licious.test.ExoticMeatCategory_Regression"/>
+      <class name="in.licious.test.RedMeatCategory_Regression"/>
+      <class name="in.licious.test.WeekendTreatsCategory_Regression"/>
+      <class name="in.licious.test.Relishes_PicklesCategory_Regression"/>
+      <class name="in.licious.test.Cold_CutsCategory_Regression"/>
+      <class name="in.licious.test.FishAndSeaFoodCategory_Regression"/>
+      <class name="in.licious.test.TodayDealsbkCategory_Regression"/>
+      <class name="in.licious.test.EggsCategory_Regression"/>
+      <class name="in.licious.test.MarinadesCategory_Regression"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

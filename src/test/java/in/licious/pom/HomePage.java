@@ -31,7 +31,7 @@ public class HomePage extends BasePage {
 	@FindBy (xpath="//a[@data-id='19']")
 	private WebElement coldcuts;
 	
-	@FindBy (xpath="//a[@data-id='28']")
+	@FindBy (xpath="//a[@href='/delicious-deals']"/*"//a[@data-id='28']"*/)
 	private WebElement weekendtreats;
 	
 	public HomePage (WebDriver driver) 
@@ -69,11 +69,23 @@ public class HomePage extends BasePage {
 	}
 	
 	public WebElement getcoldcutsCat(){
+		
 		return coldcuts;
 	}
 	
 	public WebElement getweekendtreatsCat(){
 		return weekendtreats;
 	}
-
+  @FindBy(xpath="//span[text()='Cart']")
+  private WebElement cart;
+  public WebElement getCartButtonClick()
+  {
+	 return cart; 
+  }
+  /* @FindBy(xpath="//img[@alt='licious']/../../../../following-sibling::div[@class='cat-list']")
+  private WebElement ListofElements;
+  public WebElement clickOnEachOfListElement()
+  {
+	  return ListofElements;
+  }*/
 }
